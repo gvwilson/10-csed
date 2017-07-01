@@ -14,6 +14,8 @@ there is a growing body of evidence about what works and doesn't in programming 
 This paper presents ten simple rules that should be the foundation of any course,
 formal or informal.
 
+FIXME: mention Repenning's boring/exciting X hard/easy framework from "Moving Beyond Syntax" paper.
+
 ## 1) There's no geek gene (Patitsas et al)
 
 Guzdial refers to the belief that some people are born programmers and others aren't
