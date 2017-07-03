@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage[a4paper]{geometry}
+\usepackage{natbib}
+\usepackage{hyperref}
 \begin{document}
 
 \title{Ten Simple Rules for Teaching Programming}
@@ -25,14 +27,14 @@ FIXME: mention Repenning's boring/exciting X hard/easy framework from "Moving Be
 \section{There's no geek gene} %(Patitsas et al)
 
 Guzdial refers to the belief that some people are born programmers and others aren't
-as [computing's most enduring and damaging myth][guzdial-geek].
+as ``computing's most enduring and damaging myth'' \citep{guzdial-myths}.
 Our first and most important rule is that this is wrong:
 competence at programming is not innate,
 but is rather a learned skill that can be acquired and improved with practice.
 
-The most powerful evidence for this comes from [Patitsas et al][patitsas].
+The most powerful evidence for this comes from \citet{patitsas-bimodal}.
 They examined grade distributions in introductory computing courses at a large university,
-and found that only 5.8% were actually multi-modal.
+and found that only 5.8\% were actually multi-modal.
 More damningly,
 they found that computer science faculty were more likely to see distributions as bimodal
 if they thought those grades came from a programming class
@@ -86,7 +88,7 @@ avoided or worked around:
 2.  Typing in boilerplate code that is needed by the lesson, but not
     directly relevant to it (such as library import statements), can
     distract learners from the intended thrust of a lesson.  As
-    [Willingham][willingham] says, "Memory is the residue of thought";
+    \citet{willingham-book} says, "Memory is the residue of thought";
     if the instructor spends their time typing boilerplate, that may
     be all that learners take away.
 
@@ -230,11 +232,11 @@ but they form a solid basis for any educational effort.
 [fixme-outcomes]: cite-belief-in-innate-ability-shaping-outcomes
 [fixme-parsons]: cite-parsons-problems
 [fixme-transference]: cite-on-general-knowledge-transfer
-[guzdial-geek]: https://cacm.acm.org/blogs/blog-cacm/189498-top-10-myths-about-teaching-computer-science/fulltext
 [guzdial-media]: FIXME
-[patitsas]: http://www.cs.toronto.edu/~sme/papers/2016/icer\_2016\_bimodal.pdf
 [porter]: porter-et-al-peer-instruction
 [sigcse]: FIXME
-[willingham]: https://www.amazon.com/Why-Dont-Students-Like-School/dp/047059196X/
+
+\bibliographystyle{abbrvnat}
+\bibliography{refs}
 
 \end{document}
