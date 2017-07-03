@@ -55,48 +55,54 @@ Rather than using slides,
 instructors should write programs in front of their learners [FIXME][fixme-live-coding].
 This is more effective for multiple reasons:
 
-1.  It enables instructors to be more responsive to "what if?"
+\begin{enumerate}
+\item It enables instructors to be more responsive to "what if?"
     questions. Where a slide deck is like a railway track, live coding
     allows instructors to go off road and follow their learners'
     interests.
 
-2.  It facilitates unintended knowledge transfer: students learn more
+\item  It facilitates unintended knowledge transfer: students learn more
     than the instructor consciously intends to teach by watching *how*
     instructors do things.
 
-3.  It slows the instructor down: if they has to type in the program
+\item  It slows the instructor down: if they has to type in the program
     as they go along, they can only go twice as fast as their
     learners, rather than ten-fold faster as they could with slides.
 
-4.  Learners get to how instructors diagnose and correct
+\item  Learners get to how instructors diagnose and correct
     mistakes. Novices are going to spend most of their time doing
     this, but it's left out of most textbooks.
 
-5.  Watching instructors make mistakes shows learners that it's all
-    right to make mistakes of their own.  Most people model the
+\item  Watching instructors make mistakes shows learners that it's all
+    right to make mistakes of their own~\citep{barker-live-coding}.  Most people model the
     behavior of their teachers: if the instructor isn't embarrassed
     about making and talking about mistakes, learners will be more
     comfortable doing so too.
+\end{enumerate}
 
 Live coding does have some drawbacks, but with practice, these can be
 avoided or worked around:
 
-1.  Instructors can go too slowly, either because they are not good
+\begin{enumerate}
+\item  Instructors can go too slowly, either because they are not good
     typists or by spending too much time looking at notes to try to
     remember what they meant to type.
 
-2.  Typing in boilerplate code that is needed by the lesson, but not
+\item  Typing in boilerplate code that is needed by the lesson, but not
     directly relevant to it (such as library import statements), can
     distract learners from the intended thrust of a lesson.  As
     \citet{willingham-book} says, "Memory is the residue of thought";
     if the instructor spends their time typing boilerplate, that may
     be all that learners take away.
+\end{enumerate}
 
 \section{Have students make predictions}
 
-- Being wrong stings!  Which is good.  Easy to brush it off if you haven't made prediction public.
-- Research on how students misremembered physics demos afterwards.
-- More engaging if you have to have to think about it and take an action.
+TODO I wonder if this section should be merged with peer instruction?  It overlaps a lot.
+
+Live coding is a form of demonstration.  The instructor shows how to write a program, and will usually run the program once or more during its development to show what it does.  Research from peer instruction in physics education shows that learners who observe a demonstration do not learn better than those who did not see the demonstration~\citep{crouch-demo}, and in fact many learners misremember the outcome of demonstrations afterwards~\citep{miller-demo}.
+
+The key to making demonstrations more effective is to make learners predict the outcome of the demonstration before performing it.  Crucially, their prediction should be in some way recorded or public.  This might be by a show of hands, or by holding up a cue card (A/B/C/D), or by talking to their neighbour.  We believe it is the sting of being publicly wrong that enhances the learning.  Naturally, the instructor should take care not to punish or criticise those students who predicted wrongly.
 
 \section{Use peer instruction}
 
@@ -106,7 +112,7 @@ How then can they clear up learners' many different misconceptions
 in a reasonable time?
 
 The best method developed so far is called peer instruction.
-Originally created by Eric Mazur at Harvard [FIXME][fixme-mazur],
+Originally created by Eric Mazur at Harvard~\citep{mazur-peer-instruction},
 it has been studied extensively in a wide variety of contexts,
 including programming [Porter2013][porter] and [cutts][fixme-cutts].
 In simplified form,
@@ -147,9 +153,12 @@ The practice advocated in our next rule can be used to mitigate this.
 
 \section{Use worked examples with labelled subgoals}
 
-- Lets you give students many different specific problems, while making clear the higher-level isomorphisms between the problems.
-- Without subgoal labels, learners don't always see the spirals in a spiral curriculum.
-- There is a complex result in the Morrison, Guzdial work about writing your own labels.  May be too intricate to include?
+Learning to program involves learning the syntax and semantics of a programming language, but also involves learning how to construct programs.  A good way to guide students through constructing programs is the use of worked examples: step-by-step guides showing how to solve an existing problem.
+
+A good idea when teaching is to provide many similar examples for learners to practice on.  But since learners are novices, they may not see the similarity between examples (such as finding the highest rainfall from a list of numbers, versus finding the first surname alphabetically from a list of names).  Subgoal labels break the worked examples down into more manageable chunks, and they also provide a structure which students can apply to future tasks that they attempt themselves.  \citet{morrison-subgoals} has shown that students perform better with subgoal labels than without.
+
+TODO should we give a short code snippet here with some subgoal labels to illustrate?
+
 
 \section{Start with blocks}
 
@@ -226,8 +235,6 @@ but they form a solid basis for any educational effort.
 
 [fixme-authentic-tasks]: cite-value-of-authentic-tasks
 [fixme-cutts]: cutts-ref-for-peer-instruction
-[fixme-live-coding]: cite-live-coding
-[fixme-mazur]: cite-mazur-peer-instruction
 [fixme-media-comp-replication]: cite-media-computing-replication
 [fixme-outcomes]: cite-belief-in-innate-ability-shaping-outcomes
 [fixme-parsons]: cite-parsons-problems
