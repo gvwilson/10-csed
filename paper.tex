@@ -15,11 +15,12 @@
 
 \section*{Introduction}
 
-Computing is a younger discipline than mathematics, physics, or biology,
-and there have been correspondingly fewer studies of how best to teach it.
-However,
-there is a growing body of evidence about what works and doesn't in programming education.
-This paper presents ten simple rules that should be the foundation of any course,
+Research from educational psychology suggests that teaching and learning is a subject-specific
+activity~\citep{mayer-subject}: learning programming has a different set of challenges and techniques
+than learning physics or learning to read and write.  Computing is a younger discipline than
+mathematics, physics, or biology, and there have been correspondingly fewer studies of how best to teach it.
+However, there is a growing body of evidence about what works and doesn't in programming education.
+This paper presents ten simple rules that should be the foundation of any teaching, whether
 formal or informal.
 
 FIXME: mention Repenning's boring/exciting X hard/easy framework from "Moving Beyond Syntax" paper.
@@ -51,8 +52,10 @@ may be partly responsible for the gender imbalance in computing.
 
 \section{Use live coding}
 
+\textbf{Note: I have several reservations about the Rubin paper; it doesn't really show much difference for live coding, and it uses debunked learning styles, although that's not too important to the outcome.  But it turns out there's very few papers on live coding.  The Barker paper is generally better, but only mentions live coding tangentially.}
+
 Rather than using slides,
-instructors should write programs in front of their learners [FIXME][fixme-live-coding].
+instructors should write programs in front of their learners~\cite{rubin-live-coding}.
 This is more effective for multiple reasons:
 
 \begin{enumerate}
@@ -98,7 +101,7 @@ avoided or worked around:
 
 \section{Have students make predictions}
 
-TODO I wonder if this section should be merged with peer instruction?  It overlaps a lot.
+\textbf{TODO I wonder if this section should be merged with peer instruction?  It overlaps a lot.}
 
 Live coding is a form of demonstration.  The instructor shows how to write a program, and will usually run the program once or more during its development to show what it does.  Research from peer instruction in physics education shows that learners who observe a demonstration do not learn better than those who did not see the demonstration~\citep{crouch-demo}, and in fact many learners misremember the outcome of demonstrations afterwards~\citep{miller-demo}.
 
@@ -155,15 +158,17 @@ The practice advocated in our next rule can be used to mitigate this.
 
 Learning to program involves learning the syntax and semantics of a programming language, but also involves learning how to construct programs.  A good way to guide students through constructing programs is the use of worked examples: step-by-step guides showing how to solve an existing problem.
 
-A good idea when teaching is to provide many similar examples for learners to practice on.  But since learners are novices, they may not see the similarity between examples (such as finding the highest rainfall from a list of numbers, versus finding the first surname alphabetically from a list of names).  Subgoal labels break the worked examples down into more manageable chunks, and they also provide a structure which students can apply to future tasks that they attempt themselves.  \citet{morrison-subgoals} has shown that students perform better with subgoal labels than without.
+A good idea when teaching is to provide many similar examples for learners to practice on.  But since learners are novices, they may not see the similarity between examples (such as finding the highest rainfall from a list of numbers, versus finding the first surname alphabetically from a list of names).  Subgoal labels break the worked examples down into more manageable chunks, and they also provide a structure which students can apply to future tasks that they attempt themselves.  \citet{morrison-subgoals,morrison-parsons} have shown that students perform better with subgoal labels than without.
 
 TODO should we give a short code snippet here with some subgoal labels to illustrate?
 
+\section{Novices are not experts}
 
-\section{Start with blocks}
+This principle sounds tautological, but it is easily forgotten.  Novices program differently than experts, and need different approaches or tools.  If you ask a professional programmer to iterate over a list of integers and produce the average, they can write the code within seconds, using stored knowledge of the exact pattern required.  A novice will approach this problem totally differently.  They need to remember the syntax for the different parts, they need to know how to iterate over a list, how to use an accumulator variable and so on.
 
-- Evidence generally points to blocks being better than text.
-- This can conflict with context though, and you may encounter resistance from learners (inauthenticity, etc)
+Novices may need to spend time thinking about an algorithm on paper (something expert programmers rarely need, as they have usually memorised most common algorithmic patterns).  They may need to construct examples in guided steps.  They may struggle to debug.  Debugging usually involves contrasting what is happening to what should be happening, but a novice's grasp on what should be happening is usually fragile.
+
+Novices do not become professionals simply by doing what professionals do at a slower pace.  We do not teach reading by taking a classic novel and simply proceeding more slowly.  We teach by using shorter books with simpler words and larger print.  So in programming, we must take care to use small, self-contained tasks at a level suitable for novices, with tools that suit their needs.
 
 \section{Stick to one language}
 
@@ -195,7 +200,11 @@ which have since been replicated [FIXME][fixme-media-comp-replication],
 are consistent with findings from other areas of educational research [FIXME][fixme-authentic-tasks]:
 learners find *authentic tasks* more engaging than abstracted examples.
 
-FIXME: ITiCSE report says context makes no difference to task performance.
+A classic question in computing (and mathematics) education is whether problems are better 
+with context (e.g. find the highest student grade) or without (e.g. find the maximum of the list of numbers).
+\citet{bouvier-context} studied this with a multi-university study and found no difference between
+the two.  They suggest that since it makes no difference, other considerations (such as motivation)
+should be primary.
 
 One caution is that context can inadvertently exclude some people while drawing others in.
 For example,
@@ -210,7 +219,7 @@ examples that seem small to instructors can easily overwhelm novices.
 Breaking the problem down into smaller single-concept pieces can reduce the cognitive load to something manageable.
 
 For example,
-a growing number of educators are including Parsons Problems in their pedagogic repertoire [FIXME][fixme-parsons].
+a growing number of educators are including Parson's Problems in their pedagogic repertoire~\citep{parsons,morrison-parsons}.
 Rather than writing programs from scratch,
 learners are given the lines of code they need to solve a problem,
 but in jumbled order.
@@ -237,7 +246,6 @@ but they form a solid basis for any educational effort.
 [fixme-cutts]: cutts-ref-for-peer-instruction
 [fixme-media-comp-replication]: cite-media-computing-replication
 [fixme-outcomes]: cite-belief-in-innate-ability-shaping-outcomes
-[fixme-parsons]: cite-parsons-problems
 [fixme-transference]: cite-on-general-knowledge-transfer
 [guzdial-media]: FIXME
 [porter]: porter-et-al-peer-instruction
