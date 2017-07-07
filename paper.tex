@@ -25,7 +25,11 @@ formal or informal.
 \section{There is no geek gene}\label{gene}
 
 \citet{guzdial-myths} refers to the belief that some people are born programmers and others aren't
-as ``computing's most enduring and damaging myth.''  This is often ``confirmed'' by looking at university grade distributions, which are commonly held to be bimodal: a low-scoring hump of those that will never get it, and a high-scoring hump of those that have the right stuff.
+as ``computing's most enduring and damaging myth.''
+This is often ``confirmed'' by looking at university grade distributions,
+which are commonly held to be bimodal:
+a low-scoring hump of those that will never get it
+and a high-scoring hump of those that have the right stuff.
 Our first and most important rule is that this is wrong:
 competence at programming is not innate,
 but is rather a learned skill that can be acquired and improved with practice.
@@ -50,7 +54,15 @@ may be partly responsible for the gender imbalance in computing.
 
 \section{Use peer instruction}\label{peer-instruction}
 
-One-on-one tutoring is perhaps the ideal form of teaching: all of a teacher's attention can be focused on one student, and they can completely customise their teaching for their single student, and tailor individual feedback and corrections based on two-way dialogue with that student.  In realistic settings however, one teacher must teach many students at once, whether that is a handful, tens or even hundreds in large lectures.  In larger settings, how can teachers possibly hope to clear up learners' many different misconceptions in a reasonable time?
+One-on-one tutoring is the ideal form of teaching:
+all of a teacher's attention can be focused on one student,
+and they can completely customise their teaching for that person
+and tailor individual feedback and corrections based on two-way dialogue with them.
+In realistic settings,
+however,
+one teacher must teach a handful, tens, or hundreds of students at once.
+How can teachers possibly hope to clear up many learners' different misconceptions
+in these larger settings in a reasonable time?
 
 The best method developed so far for larger-scale classrooms is called Peer Instruction.
 Originally created by Eric Mazur at Harvard~\citep{mazur-peer-instruction},
@@ -64,7 +76,9 @@ peer instruction proceeds in three phases:
 \item The instructor gives learners a brief introduction to the topic.
 
 \item The instructor then gives learners a multiple choice question
-   that probes for misconceptions rather than simple factual recall.  A programming example is given in figure \ref{fig:mcq} which relates to integer comparison and loops.
+  that probes for misconceptions rather than simple factual recall.
+  A programming example is given in figure \ref{fig:mcq}
+  which relates to integer comparison and loops.
 
 \item Learners then vote on the answer to the question.
 
@@ -95,12 +109,10 @@ Pair programming (Rule~\ref{pair-programming}) can be used to mitigate this.
 
 \begin{figure}\sffamily
 \begin{verbatim}
-for (int i = 1; i < 10; i++)
-{
-     if (i < 3 || i > 8)
-     {
-          System.out.println("Yes");
-     }
+for (int i = 1; i < 10; i++) {
+    if (i < 3 || i > 8) {
+        System.out.println("Yes");
+    }
 }
 \end{verbatim}
 How many times will the above code print out the word Yes?\\
@@ -109,7 +121,7 @@ b) 9\\
 c) 4\\
 d) 3
 \label{fig:mcq}
-\caption{An example multiple choice question, probing learners' understanding of loops and integer comparisons.}
+\caption{An example multiple choice question probing learners' understanding of loops and integer comparisons.}
 \end{figure}
 
 \section{Use live coding}\label{live-coding}
@@ -125,19 +137,23 @@ This is more effective for multiple reasons:
   allows instructors to go off road and follow their learners'
   interests.
 
-\item It facilitates unintended knowledge transfer: students learn more
-  than the instructor consciously intends to teach by watching \textit{how}
-  instructors do things.  The extra knowledge may be high-level (e.g. whether a program is written top-down or bottom-up) or fairly low-level (e.g. using keyboard shortcuts).
+\item It facilitates unintended knowledge transfer: students learn
+  more than the instructor consciously intends to teach by watching
+  \textit{how} instructors do things.  The extra knowledge may be
+  high-level (e.g., whether a program is written top-down or
+  bottom-up) or fairly low-level (e.g., using keyboard shortcuts).
 
-\item It slows the instructor down: if the instructor has to type in the program
-  as they go along, they can only go twice as fast as their
-  learners, rather than ten-fold faster as they could with slides.
+\item It slows the instructor down: if the instructor has to type in
+  the program as they go along, they can only go twice as fast as
+  their learners, rather than ten-fold faster as they could with
+  slides.
 
 \item Learners get to see how instructors diagnose and correct
   mistakes. Novices are going to spend most of their time doing
   this, but it's left out of most textbooks.
 
-\item Watching instructors make mistakes shows learners that it's alright to make mistakes of their own~\citep{barker-live-coding}.
+\item Watching instructors make mistakes shows learners that it's
+  alright to make mistakes of their own~\citep{barker-live-coding}.
   Most people model the behavior of their teachers: if the instructor
   isn't embarrassed about making and talking about mistakes, learners
   will be more comfortable doing so too.
@@ -153,23 +169,29 @@ avoided or worked around:
   typists or by spending too much time looking at notes to try to
   remember what they meant to type.
 
-\item Instructors can spend too much time typing in boilerplate code that is needed by the lesson, but not
-  directly relevant to it (such as library import statements), can
-  distract learners from the intended thrust of a lesson.  As
-  \citet{willingham-book} says, ``Memory is the residue of thought'';
-  if the instructor spends their time typing boilerplate, that may be
-  all that learners take away.  This can be avoided by starting with a partial skeleton that includes the boilerplate, or having it on hand to copy and paste at the appropriate juncture.
+\item Instructors can spend too much time typing in boilerplate code
+  that is needed by the lesson, but not directly relevant to it (such
+  as library import statements), can distract learners from the
+  intended thrust of a lesson.  As \citet{willingham-book} says,
+  ``Memory is the residue of thought''; if the instructor spends their
+  time typing boilerplate, that may be all that learners take away.
+  This can be avoided by starting with a partial skeleton that
+  includes the boilerplate, or having it on hand to copy and paste
+  when needed.  (Of the two, we prefer the former, since learners
+  may not be able to keep up with copying and pasting.)
 
 \end{enumerate}
 
 \section{Have students make predictions}\label{predictions}
 
-When instructors are using live coding,
-they usually run the program several times during its development to show what it does.
-Research from peer instruction in physics education shows that
-learners who observe a demonstration \textit{do not} learn better than
-those who did not see the demonstration~\citep{crouch-demo},
-and in fact many learners misremember the outcome of demonstrations afterwards~\citep{miller-demo}.  That is, demonstrations can be useless or actively harmful to learning.
+When instructors are using live coding, they usually run the program
+several times during its development to show what it does.  Research
+from peer instruction in physics education shows that learners who
+observe a demonstration \textit{do not} learn better than those who
+did not see the demonstration~\citep{crouch-demo}, and in fact many
+learners misremember the outcome of demonstrations
+afterwards~\citep{miller-demo}.  In other words, demonstrations can
+actually be useless or actively harmful.
 
 The key to making demonstrations more effective is
 to make learners predict the outcome of the demonstration before performing it.
@@ -218,7 +240,8 @@ But since learners are novices,
 they may not see the similarity between examples:
 finding the highest rainfall from a list of numbers and
 finding the first surname alphabetically from a list of names
-may seem like quite different problems to them, even though more advanced programmers would recognise them as isomorphic.
+may seem like quite different problems to them,
+even though more advanced programmers would recognise them as isomorphic.
 
 \citet{morrison-subgoals,morrison-parsons} have shown that students perform better
 when worked examples are broken down into steps (or subgoals)
@@ -231,7 +254,8 @@ TODO give an example in a figure.
 
 \section{Stick to one language}\label{one-language}
 
-A principle that applies across all areas of education is that transference only comes with mastery \citep{gick-holyoak}.
+A principle that applies across all areas of education is that
+transference only comes with mastery \citep{gick-holyoak}.
 Courses should therefore stick to one language until learners have progressed far enough with it
 to be able to distinguish the forest from the trees.
 While an experienced programmer can,
@@ -263,7 +287,8 @@ should be primary.
 One caution is that context can inadvertently exclude some people while drawing others in.
 For example,
 many educators use computer games as a motivating example for programming classes,
-but some learners may associate them with violence and racial or gender stereotypes, or simply find them unenjoyable.
+but some learners may associate them with violence and racial or gender stereotypes,
+or simply find them unenjoyable.
 
 \section{Novices are not experts}\label{not-experts}
 
@@ -299,14 +324,17 @@ with tools that suit their needs.
 Our final rule for teaching programming is that you don't have to program to do it.
 Between syntax, semantics, algorithms, and design,
 examples that seem small to instructors can easily overwhelm novices.
-Breaking the problem down into smaller single-concept pieces can reduce the cognitive load to something manageable.
+Breaking the problem down into smaller single-concept pieces
+can reduce the cognitive load to something manageable.
 
 For example,
-a growing number of educators are including Parsons Problems in their pedagogic repertoire~\citep{parsons,morrison-parsons}.
+a growing number of educators are including Parsons Problems
+in their pedagogic repertoire~\citep{parsons,morrison-parsons}.
 Rather than writing programs from scratch,
 learners are given the lines of code they need to solve a problem,
 but in jumbled order.
-Re-ordering them to solve the problem correctly allows them to concentrate on mastering control flow
+Re-ordering them to solve the problem correctly
+allows them to concentrate on mastering control flow
 without having to devote mental energy to recalling syntax
 or the specifics of library functions.
 
