@@ -278,8 +278,11 @@ drawing others in. For example, many educators use computer games as a
 motivating example for programming classes, but some learners may
 associate them with violence and racial or gender stereotypes, or simply
 find them unenjoyable.
+Whatever examples are chosen,
+the goal must be to move learners as quickly as possible
+from ``hard and boring'' to ``easy and exciting'' \[@repenning\].
 
-## 9) Novices are not experts
+## 9) Remember that novices are not experts
 
 This principle is tautological, but it is easily forgotten. Novices
 program differently than experts, and need different approaches or
@@ -330,16 +333,19 @@ growing number of rigorous, insightful studies with immediate practical
 application. Future work may overturn or qualify some of our ten simple
 rules, but they form a solid basis for any educational effort.
 
+\[@alvidrez-weinstein\]:
 J. Alvidrez and R. S. Weinstein. Early teacher perceptions and later
 student academic achievement. *Journal of Educational Psychology*, 910
 (4):0 731--746, 1999.
 
+\[@barker-live-coding\]:
 L. J. Barker, K. Garvin-Doxas, and E. Roberts. What can computer science
 learn from a fine arts approach to teaching? In *Proceedings of the 36th
 SIGCSE Technical Symposium on Computer Science Education*, SIGCSE '05,
 pages 421--425, New York, NY, USA, 2005. ACM. ISBN 1-58113-997-7.
 <http://doi.acm.org/10.1145/1047344.1047482>.
 
+\[@bouvier-context\]:
 D. Bouvier, E. Lovellette, J. Matta, B. Alshaigy, B. A. Becker,
 M. Craig, J. Jackova, R. McCartney, K. Sanders, and M. Zarb. Novice
 programmers and the problem description effect. In *Proceedings of the
@@ -347,56 +353,69 @@ programmers and the problem description effect. In *Proceedings of the
 NY, USA, 2016. ACM. ISBN 978-1-4503-4882-9.
 <http://doi.acm.org/10.1145/3024906.3024912>.
 
+\[@brophy\]:
 J. E. Brophy. Research on the self-fulfilling prophecy and teacher
 expectations. *Journal of Educational Psychology*, 750 (5):0 631--661,
 1983.
 
+\[@crouch-demo\]:
 C. Crouch, A. P. Fagen, J. P. Callan, and E. Mazur. Classroom
 demonstrations: Learning tools or entertainment? *American Journal of
 Physics*, 720 (6):0 835--838, 2004, 10.1119/1.1707018.
 
+\[@gick-holyoak\]:
 M. L. Gick and K. J. Holyoak. The cognitive basis of knowledge transfer.
 In S. M. Cormier and J. D. Hagman, editors, *Transfer of learning:
 Contemporary research and applications*. Academic Press, 1987.
 
+\[@guzdial-media\]:
 M. Guzdial. Exploring hypotheses about media computation. In
 *Proceedings of the Ninth Annual International ACM Conference on
 International Computing Education Research*, ICER '13, pages 19--26,
 2013. ISBN 978-1-4503-2243-0.
 
+\[@guzdial-myths\]:
 M. Guzdial. Top 10 myths about teaching computer science.
 <https://cacm.acm.org/blogs/blog-cacm/189498-top-10-myths-about-teaching-computer-science/fulltext>,
 2015. Accessed 3rd July 2017.
 
+\[@hannay\]:
 J. E. Hannay, T. Dybå, E. Arisholm, , and D. I. Sjøberg. The
 effectiveness of pair programming: a meta-analysis. *Information and
 Software Technology*, 510 (7), 2009.
 
+\[@jussim-eccles\]:
 L. Jussim and J. Eccles. Social perception, social stereotypes, and
 teacher expectations: Accuracy and the quest for the powerful
 self-fulfilling prophecy. *Advances in Experimental Social Psychology*,
 28:0 281--388, 1996.
 
+\[@mayer-subject\]:
 R. E. Mayer. Teaching of subject matter. *Annual Review of Psychology*,
 550 (1):0 715--744, 2004, 10.1146/annurev.psych.55.082602.133124.
 
+\[@mazur-peer-instruction\]:
 E. Mazur. *Peer Instruction: A User's Manual*. Prentice Hall, 1996.
 
+\[@mcdowell\]:
 C. McDowell, L. Werner, H. E. Bullock, and J. Fernald. Pair programming
 improves student retention, confidence, and program quality.
 *Communications of the ACM*, 490 (8):0 90--95, August 2006.
 
+\[@miller-demo\]:
 K. Miller, N. Lasry, K. Chu, and E. Mazur. Role of physics lecture
-demonstrations in conceptual learning. *Phys. Rev. ST Phys. Educ. Res.*,
-9:0 020113, Sep 2013,
+demonstrations in conceptual learning. *Phys. Rev. ST
+Phys. Educ. Res.*, 9:0 020113, Sep 2013,
 <https://link.aps.org/doi/10.1103/PhysRevSTPER.9.020113>.
 
-L. E. Margulieux, M. Guzdial, and R. Catrambone.
-Subgoal-labeled instructional material improves performance and transfer in learning to develop mobile applications.
-In *Proceedings of the Ninth Annual International Conference on International Computing Education Research*,
-pages 71--78, 2012,
-10.1145/2361276.2361291.
+\[@margulieux\]:
+L. E. Margulieux, M. Guzdial, and R. Catrambone.  Subgoal-labeled
+instructional material improves performance and transfer in learning
+to develop mobile applications.  In *Proceedings of the Ninth Annual
+International Conference on International Computing Education
+Research*, pages 71--78, 2012, 10.1145/2361276.2361291.
 
+\[@morrison-subgoals\]:
 B. B. Morrison, L. E. Margulieux, and M. Guzdial. Subgoals, context, and
 worked examples in learning computing problem solving. In *Proceedings
 of the Eleventh Annual International Conference on International
@@ -404,41 +423,53 @@ Computing Education Research*, ICER '15, pages 21--29, New York, NY, USA,
 2015. ACM. ISBN 978-1-4503-3630-7,
 <http://doi.acm.org/10.1145/2787622.2787733>.
 
+\[@morrison-parsons\]:
 B. B. Morrison, L. E. Margulieux, B. Ericson, and M. Guzdial. Subgoals
 help students solve parsons problems. In *Proceedings of the 47th ACM
 Technical Symposium on Computing Science Education*, SIGCSE '16, pages
 42--47, New York, NY, USA, 2016. ACM. ISBN 978-1-4503-3685-7,
 <http://doi.acm.org/10.1145/2839509.2844617>.
 
-D. Parsons and P. Haden. Parson's programming puzzles: A fun and
+\[@parsons\]:
+D. Parsons and P. Haden. Parsons programming puzzles: A fun and
 effective learning tool for first programming courses. In *Proceedings
 of the 8th Australasian Conference on Computing Education - Volume 52*,
 ACE '06, pages 157--163, Darlinghurst, Australia, Australia, 2006.
 Australian Computer Society, Inc. ISBN 1-920682-34-1. URL
 <http://dl.acm.org/citation.cfm?id=1151869.1151890>.
 
+\[@patitsas-bimodal\]:
 E. Patitsas, J. Berlin, M. Craig, and S. Easterbrook. Evidence that
 computer science grades are not bimodal. In *Proceedings of the 2016 ACM
 Conference on International Computing Education Research*, ICER '16,
 pages 113--121, New York, NY, USA, 2016. ACM. ISBN 978-1-4503-4449-4,
 <http://doi.acm.org/10.1145/2960310.2960312>.
 
+\[@porter-multi\]:
 L. Porter, C. Bailey Lee, B. Simon, Q. Cutts, and D. Zingaro. Experience
 report: A multi-classroom report on the value of peer instruction. In
 *Proceedings of the 16th Annual Joint Conference on Innovation and
 Technology in Computer Science Education*, pages 138--142, 2011. ISBN
 978-1-4503-0697-3.
 
+\[@porter-success\]:
 L. Porter, M. Guzdial, C. McDowell, and B. Simon. Success in
 introductory programming: What works? *Communications of the ACM*, 560
 (8), 2013.
 
+\[@repenning\]:
+A. Repenning.  Moving beyond syntax: lessons from 20 years of blocks
+programing in AgentSheets.  Journal of Visual Languages and Sentient
+Systems, 3, July 2017, 10.18293/VLSS2017-010.
+
+\[@rubin-live-coding\]:
 M. J. Rubin. The effectiveness of live-coding to teach introductory
 programming. In *Proceeding of the 44th ACM Technical Symposium on
 Computer Science Education*, SIGCSE '13, pages 651--656, New York, NY,
 USA, 2013. ACM. ISBN 978-1-4503-1868-6,
 <http://doi.acm.org/10.1145/2445196.2445388>.
 
+\[@willingham-book\]:
 D. T. Willingham. *Why don't students like school?: A cognitive
 scientist answers questions about how the mind works and what it means
 for the classroom*. John Wiley & Sons, 2009.
