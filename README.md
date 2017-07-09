@@ -342,16 +342,16 @@ student academic achievement. *Journal of Educational Psychology*, 910
 L. J. Barker, K. Garvin-Doxas, and E. Roberts. What can computer science
 learn from a fine arts approach to teaching? In *Proceedings of the 36th
 SIGCSE Technical Symposium on Computer Science Education*, SIGCSE '05,
-pages 421--425, New York, NY, USA, 2005. ACM. ISBN 1-58113-997-7.
-<http://doi.acm.org/10.1145/1047344.1047482>.
+pages 421--425, New York, NY, USA, 2005. ACM. ISBN 1-58113-997-7,
+10.1145/1047344.1047482.
 
 \[@bouvier-context\]:
 D. Bouvier, E. Lovellette, J. Matta, B. Alshaigy, B. A. Becker,
 M. Craig, J. Jackova, R. McCartney, K. Sanders, and M. Zarb. Novice
 programmers and the problem description effect. In *Proceedings of the
-2016 ITiCSE Working Group Reports*, ITiCSE '16, pages 103--118, New York,
-NY, USA, 2016. ACM. ISBN 978-1-4503-4882-9.
-<http://doi.acm.org/10.1145/3024906.3024912>.
+2016 ITiCSE Working Group Reports*, ITiCSE '16, pages 103--118, New
+York, NY, USA, 2016. ACM. ISBN 978-1-4503-4882-9,
+10.1145/3024906.3024912.
 
 \[@brophy\]:
 J. E. Brophy. Research on the self-fulfilling prophecy and teacher
@@ -406,7 +406,7 @@ improves student retention, confidence, and program quality.
 K. Miller, N. Lasry, K. Chu, and E. Mazur. Role of physics lecture
 demonstrations in conceptual learning. *Phys. Rev. ST
 Phys. Educ. Res.*, 9:0 020113, Sep 2013,
-<https://link.aps.org/doi/10.1103/PhysRevSTPER.9.020113>.
+10.1103/PhysRevSTPER.9.020113.
 
 \[@margulieux\]:
 L. E. Margulieux, M. Guzdial, and R. Catrambone.  Subgoal-labeled
@@ -421,29 +421,28 @@ worked examples in learning computing problem solving. In *Proceedings
 of the Eleventh Annual International Conference on International
 Computing Education Research*, ICER '15, pages 21--29, New York, NY, USA,
 2015. ACM. ISBN 978-1-4503-3630-7,
-<http://doi.acm.org/10.1145/2787622.2787733>.
+10.1145/2787622.2787733.
 
 \[@morrison-parsons\]:
 B. B. Morrison, L. E. Margulieux, B. Ericson, and M. Guzdial. Subgoals
 help students solve parsons problems. In *Proceedings of the 47th ACM
 Technical Symposium on Computing Science Education*, SIGCSE '16, pages
 42--47, New York, NY, USA, 2016. ACM. ISBN 978-1-4503-3685-7,
-<http://doi.acm.org/10.1145/2839509.2844617>.
+10.1145/2839509.2844617.
 
 \[@parsons\]:
 D. Parsons and P. Haden. Parsons programming puzzles: A fun and
 effective learning tool for first programming courses. In *Proceedings
 of the 8th Australasian Conference on Computing Education - Volume 52*,
 ACE '06, pages 157--163, Darlinghurst, Australia, Australia, 2006.
-Australian Computer Society, Inc. ISBN 1-920682-34-1. URL
-<http://dl.acm.org/citation.cfm?id=1151869.1151890>.
+Australian Computer Society, Inc. ISBN 1-920682-34-1.
 
 \[@patitsas-bimodal\]:
 E. Patitsas, J. Berlin, M. Craig, and S. Easterbrook. Evidence that
 computer science grades are not bimodal. In *Proceedings of the 2016 ACM
 Conference on International Computing Education Research*, ICER '16,
 pages 113--121, New York, NY, USA, 2016. ACM. ISBN 978-1-4503-4449-4,
-<http://doi.acm.org/10.1145/2960310.2960312>.
+10.1145/2960310.2960312.
 
 \[@porter-multi\]:
 L. Porter, C. Bailey Lee, B. Simon, Q. Cutts, and D. Zingaro. Experience
@@ -466,8 +465,7 @@ Systems, 3, July 2017, 10.18293/VLSS2017-010.
 M. J. Rubin. The effectiveness of live-coding to teach introductory
 programming. In *Proceeding of the 44th ACM Technical Symposium on
 Computer Science Education*, SIGCSE '13, pages 651--656, New York, NY,
-USA, 2013. ACM. ISBN 978-1-4503-1868-6,
-<http://doi.acm.org/10.1145/2445196.2445388>.
+USA, 2013. ACM. ISBN 978-1-4503-1868-6, 10.1145/2445196.2445388.
 
 \[@willingham-book\]:
 D. T. Willingham. *Why don't students like school?: A cognitive
