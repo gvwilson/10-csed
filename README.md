@@ -333,6 +333,8 @@ growing number of rigorous, insightful studies with immediate practical
 application. Future work may overturn or qualify some of our ten simple
 rules, but they form a solid basis for any educational effort.
 
+## Bibliography
+
 \[@alvidrez-weinstein\]:
 J. Alvidrez and R. S. Weinstein. Early teacher perceptions and later
 student academic achievement. *Journal of Educational Psychology*, 910
