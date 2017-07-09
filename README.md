@@ -240,7 +240,7 @@ efficiently.
     5. Drag out call clapSound.Play
     6. Connect it after when clap.Touched
 
-    Figure 2: An example of subgoal labeling (taken from \[@margulieux\])
+    Figure 2: An example of subgoal labeling (taken from [@margulieux])
 
 ## 7) Stick to one language
 
