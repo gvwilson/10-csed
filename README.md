@@ -106,7 +106,7 @@ because of varied prior experience). Pair programming
     c) 4
     d) 3
 
-    Figure 1
+    Figure 1: An example multiple choice question probing learners' understanding of loops and integer comparisons.
 
 ## 3) Use live coding
 
@@ -213,12 +213,34 @@ list of numbers and finding the first surname alphabetically from a list
 of names may seem like quite different problems to them, even though
 more advanced programmers would recognise them as isomorphic.
 
-\[@morrison-subgoals; @morrison-parsons\] have shown that students perform
+\[@morrison-subgoals; @morrison-parsons; @margulieux\] have shown that students perform
 better when worked examples are broken down into steps (or subgoals)
 which are given names (or labels). Subgoal labels provide a structure
 which students can apply to future tasks that they attempt themselves,
 and allow them to communicate with their peers and instructors more
-efficiently. TODO give an example in a figure.
+efficiently.
+
+    Conventional Materials
+    1. Click on "My Blocks" to see the blocks for components you created.
+    2. Click on "clap"
+    3. Drag out a when clap.Touched block
+    4. Click on “clapSound”
+    5. Drag out call clapSound.Play
+    6. Connect it after when clap.Touched
+
+    Subgoal Labeled Materials
+
+    Handle Events from My Blocks
+    1. Click on "My Blocks" to see the blocks for components you created.
+    2. Click on "clap"
+    3. Drag out a when clap.Touched block
+
+    Set Output from My Blocks
+    4. Click on “clapSound” and
+    5. Drag out call clapSound.Play
+    6. Connect it after when clap.Touched
+
+    Figure 2: An example of subgoal labeling (taken from \[@margulieux\])
 
 ## 7) Stick to one language
 
@@ -368,6 +390,12 @@ K. Miller, N. Lasry, K. Chu, and E. Mazur. Role of physics lecture
 demonstrations in conceptual learning. *Phys. Rev. ST Phys. Educ. Res.*,
 9:0 020113, Sep 2013,
 <https://link.aps.org/doi/10.1103/PhysRevSTPER.9.020113>.
+
+L. E. Margulieux, M. Guzdial, and R. Catrambone.
+Subgoal-labeled instructional material improves performance and transfer in learning to develop mobile applications.
+In *Proceedings of the Ninth Annual International Conference on International Computing Education Research*,
+pages 71--78, 2012,
+10.1145/2361276.2361291.
 
 B. B. Morrison, L. E. Margulieux, and M. Guzdial. Subgoals, context, and
 worked examples in learning computing problem solving. In *Proceedings

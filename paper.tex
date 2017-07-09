@@ -20,8 +20,6 @@ there is a growing body of evidence about what works and doesn't.
 This paper presents ten simple rules that should be the foundation of any teaching of programming, whether
 formal or informal.
 
-% FIXME: mention Repenning's boring/exciting X hard/easy framework from "Moving Beyond Syntax" paper.
-
 \section{There is no geek gene}\label{gene}
 
 \citet{guzdial-myths} refers to the belief that some people are born programmers and others aren't
@@ -107,7 +105,7 @@ it can be problematic if ability levels differ widely
 because of varied prior experience).
 Pair programming (Rule~\ref{pair-programming}) can be used to mitigate this.
 
-\begin{figure}\sffamily
+\begin{figure}
 \begin{verbatim}
 for (int i = 1; i < 10; i++) {
     if (i < 3 || i > 8) {
@@ -243,14 +241,43 @@ finding the first surname alphabetically from a list of names
 may seem like quite different problems to them,
 even though more advanced programmers would recognise them as isomorphic.
 
-\citet{morrison-subgoals,morrison-parsons} have shown that students perform better
+\citet{morrison-subgoals,morrison-parsons,margulieux} have shown that students perform better
 when worked examples are broken down into steps (or subgoals)
-which are given names (or labels).
+which are given names (or labels) (Figure~\ref{fig:subgoal}).
 Subgoal labels provide a structure which students can apply to future tasks that they attempt themselves,
 and allow them to communicate with their peers and instructors more efficiently.
-TODO give an example in a figure.
 
-% FIXME give a short code snippet here with some subgoal labels to illustrate - yes please
+\begin{figure}
+
+\noindent
+\textbf{Conventional Materials}
+\begin{verbatim}
+1. Click on "My Blocks" to see the blocks for components you created.
+2. Click on "clap"
+3. Drag out a when clap.Touched block
+4. Click on “clapSound”
+5. Drag out call clapSound.Play
+6. Connect it after when clap.Touched
+\end{verbatim}
+
+\noindent
+\textbf{Subgoal Labeled Materials}
+\begin{verbatim}
+Handle Events from My Blocks
+
+1. Click on "My Blocks" to see the blocks for components you created.
+2. Click on "clap"
+3. Drag out a when clap.Touched block
+
+Set Output from My Blocks
+
+4. Click on “clapSound” and
+5. Drag out call clapSound.Play
+6. Connect it after when clap.Touched
+\end{verbatim}
+\label{fig:subgoal}
+\caption{An example of subgoal labeling (taken from \cite{margulieux})}
+\end{figure}
 
 \section{Stick to one language}\label{one-language}
 
