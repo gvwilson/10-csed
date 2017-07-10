@@ -49,11 +49,11 @@ responsible for the gender imbalance in computing.
 
 ## 2) Use peer instruction
 
-One-on-one tutoring is the ideal form of teaching: all of a teacher's
+One-on-one tutoring is perhaps the ideal form of teaching: all of a teacher's
 attention can be focused on one student, and they can completely
 customise their teaching for that person and tailor individual feedback
 and corrections based on two-way dialogue with them. In realistic
-settings, however, one teacher must teach a handful, tens, or hundreds
+settings, however, one teacher must usual teach several, tens, or even hundreds
 of students at once. How can teachers possibly hope to clear up many
 learners' different misconceptions in these larger settings in a
 reasonable time?
@@ -68,8 +68,11 @@ simplified form, peer instruction proceeds in three phases:
 
 2.  The instructor then gives learners a multiple choice question that
     probes for misconceptions rather than simple factual recall. A
-    programming example is given in Figure 1 which relates to
-    integer comparison and loops.
+    programming example is given in Figure 1 which relates to integer
+    comparison and loops.  There is no point asking a trivial question
+    that all students will get right.  The ideal questions are those
+    where students are most likely to vote equally for each of the
+    options.
 
 3.  Learners then vote on the answer to the question.
 
@@ -206,18 +209,19 @@ programs. A good way to guide students through constructing programs is
 the use of worked examples: step-by-step guides showing how to solve an
 existing problem.
 
-A good idea when teaching is to provide many similar examples for
-learners to practice on. But since learners are novices, they may not
-see the similarity between examples: finding the highest rainfall from a
-list of numbers and finding the first surname alphabetically from a list
-of names may seem like quite different problems to them, even though
-more advanced programmers would recognise them as isomorphic.
+Instructors usually provide many similar programming examples for
+learners to practice on.  But since learners are novices, they may not
+see the similarity between examples: finding the highest rainfall from
+a list of numbers and finding the first surname alphabetically from a
+list of names may seem like quite different problems to them, even
+though more advanced programmers would recognise them as isomorphic.
 
-\[@morrison-subgoals; @morrison-parsons; @margulieux\] have shown that students perform
-better when worked examples are broken down into steps (or subgoals)
-which are given names (or labels). Subgoal labels provide a structure
-which students can apply to future tasks that they attempt themselves,
-and allow them to communicate with their peers and instructors more
+\[@morrison-subgoals; @morrison-parsons; @margulieux\] have shown that
+students perform better when worked examples are broken down into
+steps (or subgoals) which are given names (or labels) --- an example
+is given in Figure 2. Subgoal labels provide a structure which
+students can apply to future tasks that they attempt themselves, and
+allow them to communicate with their peers and instructors more
 efficiently.
 
     Conventional Materials
@@ -305,7 +309,7 @@ do at a slower pace. We do not teach reading by taking a classic novel
 and simply proceeding more slowly. We teach by using shorter books with
 simpler words and larger print. So in programming, we must take care to
 use small, self-contained tasks at a level suitable for novices, with
-tools that suit their needs.
+tools that suit their needs, and without scoffing.
 
 ## 10) Don't just code
 
@@ -326,12 +330,22 @@ recalling syntax or the specifics of library functions.
 ## Conclusion
 
 Like anything involving human subjects, studies of computing education
-must necessarily be hedged with qualifiers. However, we do know a great
-deal, and are learning more each year. Venues like SIGCSE
-(<http://sigcse.org/>) and ITiCSE (<http://iticse.acm.org/>) present a
-growing number of rigorous, insightful studies with immediate practical
-application. Future work may overturn or qualify some of our ten simple
-rules, but they form a solid basis for any educational effort.
+must necessarily be hedged with qualifiers. However, we do know a
+great deal, and are learning more each year. Venues like SIGCSE
+(<http://sigcse.org/>), ITiCSE (<http://iticse.acm.org/>), and ICER
+(<https://icer.hosting.acm.org>) present a growing number of rigorous,
+insightful studies with immediate practical application. Future work
+may overturn or qualify some of our ten simple rules, but they form a
+solid basis for any educational effort.
+
+We offer one final observation: do not forget the human element.
+Programmers have a reputation for pouring scorn on certain programming
+languages (e.g., PHP), or for gatekeeping (e.g., stating that you
+can't learn programming if you didn't start young).  If you are
+teaching someone to program, the last thing you want to do is make
+them feel like they can't succeed or that any existing skill they have
+(no matter when or how acquired) is worthless.  Make your learners
+feel that they can be a programmer, and they just might become one.
 
 ## Bibliography
 
