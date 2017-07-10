@@ -8,7 +8,7 @@
 ## Introduction
 
 Research from educational psychology suggests that teaching and learning
-are subject-specific activities \[@mayer-subject\]: learning programming
+are subject-specific activities \[[mayer-subject](#mayer-subject)\]: learning programming
 has a different set of challenges and techniques than learning physics
 or learning to read and write. Computing is a younger discipline than
 mathematics, physics, or biology, and while there have been
@@ -19,7 +19,7 @@ of programming, whether formal or informal.
 
 ## 1) There is no geek gene
 
-\[@guzdial-myths\] refers to the belief that some people are born
+\[[guzdial-myths](#guzdial-myths)\] refers to the belief that some people are born
 programmers and others aren't as "computing's most enduring and damaging
 myth." This is often "confirmed" by looking at university grade
 distributions, which are commonly held to be bimodal: a low-scoring hump
@@ -28,7 +28,7 @@ have the right stuff. Our first and most important rule is that this is
 wrong: competence at programming is not innate, but is rather a learned
 skill that can be acquired and improved with practice.
 
-The most powerful evidence for this comes from \[@patitsas-bimodal\]. They
+The most powerful evidence for this comes from \[[patitsas-bimodal](#patitsas-bimodal)\]. They
 examined grade distributions in introductory computing courses at a
 large university, and found that only 5.8% were actually multi-modal.
 More damningly, they found that computer science faculty were more
@@ -39,7 +39,7 @@ the distributions as bimodal if they believed some students are innately
 predisposed to do well in computer science.
 
 Beliefs such as this are known to have powerful effects on education
-outcomes \[@alvidrez-weinstein; @brophy; @jussim-eccles\]. If instructors
+outcomes \[[alvidrez-weinstein](#alvidrez-weinstein); [brophy](#brophy); [jussim-eccles](#jussim-eccles)\]. If instructors
 believe that "some kids get it and some kids don't", they will
 (consciously or unconsciously) invest less in those whom they put in the
 second category. When combined with cultural stereotypes about who is
@@ -60,8 +60,8 @@ reasonable time?
 
 The best method developed so far for larger-scale classrooms is called
 Peer Instruction. Originally created by Eric Mazur at
-Harvard \[@mazur-peer-instruction\], it has been studied extensively in a
-wide variety of contexts, including programming \[@cutts; @porter\]. In
+Harvard \[[mazur-peer-instruction](#mazur-peer-instruction)\], it has been studied extensively in a
+wide variety of contexts, including programming \[[porter-multi](#porter-multi); [porter-success](#porter-success)\]. In
 simplified form, peer instruction proceeds in three phases:
 
 1.  The instructor gives learners a brief introduction to the topic.
@@ -114,7 +114,7 @@ because of varied prior experience). Pair programming
 ## 3) Use live coding
 
 Rather than using slides, instructors should create programs in front of
-their learners \[@rubin-live-coding\]. This is more effective for multiple
+their learners \[[rubin-live-coding](#rubin-live-coding)\]. This is more effective for multiple
 reasons:
 
 1.  It enables instructors to be more responsive to "what if?"
@@ -136,7 +136,7 @@ reasons:
     left out of most textbooks.
 
 5.  Watching instructors make mistakes shows learners that it's alright
-    to make mistakes of their own \[@barker-live-coding\]. Most people
+    to make mistakes of their own \[[barker-live-coding](#barker-live-coding)\]. Most people
     model the behavior of their teachers: if the instructor isn't
     embarrassed about making and talking about mistakes, learners will
     be more comfortable doing so too.
@@ -151,7 +151,7 @@ avoided or worked around:
 2.  Instructors can spend too much time typing in boilerplate code that
     is needed by the lesson, but not directly relevant to it (such as
     library import statements), can distract learners from the intended
-    thrust of a lesson. As \[@willingham-book\] says, "Memory is the residue
+    thrust of a lesson. As \[[willingham-book](#willingham-book)\] says, "Memory is the residue
     of thought"; if the instructor spends their time typing boilerplate,
     that may be all that learners take away. This can be avoided by
     starting with a partial skeleton that includes the boilerplate, or
@@ -165,8 +165,8 @@ When instructors are using live coding, they usually run the program
 several times during its development to show what it does. Research from
 peer instruction in physics education shows that learners who observe a
 demonstration *do not* learn better than those who did not see the
-demonstration \[@crouch-demo\], and in fact many learners misremember the
-outcome of demonstrations afterwards \[@miller-demo\]. In other words,
+demonstration \[[crouch-demo](#crouch-demo)\], and in fact many learners misremember the
+outcome of demonstrations afterwards \[[miller-demo](#miller-demo)\]. In other words,
 demonstrations can actually be useless or actively harmful.
 
 The key to making demonstrations more effective is to make learners
@@ -186,8 +186,8 @@ Pair programming is a software development practice in which two
 programmers share one computer. One person (called the driver) does the
 typing, while the other (called the navigator) offers comments and
 suggestions. The two switch roles several times per hour. Pair
-programming is a good practice in real-life programming \[@hannay\], and
-also a good way to teach \[@mcdowell\]. Partners can not only help each
+programming is a good practice in real-life programming \[[hannay](#hannay)\], and
+also a good way to teach \[[mcdowell](#mcdowell)\]. Partners can not only help each
 other out during practical exercises, but can also clarify each other's
 misconceptions when the solution is presented.
 
@@ -216,7 +216,7 @@ a list of numbers and finding the first surname alphabetically from a
 list of names may seem like quite different problems to them, even
 though more advanced programmers would recognise them as isomorphic.
 
-\[@morrison-subgoals; @morrison-parsons; @margulieux\] have shown that
+\[[morrison-subgoals](#morrison-subgoals); [morrison-parsons](#morrison-parsons); [margulieux](#margulieux)\] have shown that
 students perform better when worked examples are broken down into
 steps (or subgoals) which are given names (or labels) --- an example
 is given in Figure 2. Subgoal labels provide a structure which
@@ -244,12 +244,12 @@ efficiently.
     5. Drag out call clapSound.Play
     6. Connect it after when clap.Touched
 
-    Figure 2: An example of subgoal labeling (taken from [@margulieux])
+    Figure 2: An example of subgoal labeling (taken from [margulieux])
 
 ## 7) Stick to one language
 
 A principle that applies across all areas of education is that
-transference only comes with mastery \[@gick-holyoak\]. Courses should
+transference only comes with mastery \[[gick-holyoak](#gick-holyoak)\]. Courses should
 therefore stick to one language until learners have progressed far
 enough with it to be able to distinguish the forest from the trees.
 While an experienced programmer can, for example, take what they know
@@ -267,13 +267,13 @@ Guzdial et al. found that having learners manipulate images, audio, and
 video in their early programming assignments increased retention in two
 senses: learners remembered more of the material when re-tested after a
 delay, and were more likely to stay in computing programs
-\[@guzdial-media\]. This is a particular instance of a larger observation:
+\[[guzdial-media](#guzdial-media)\]. This is a particular instance of a larger observation:
 learners find authentic tasks more engaging than abstracted examples.
 
 A classic question in computing (and mathematics) education is whether
 problems are better with context (e.g. find the highest student grade)
 or without (e.g. find the maximum of the list of numbers).
-\[@bouvier-context\] studied this with a multi-university study and found no
+\[[bouvier-context](#bouvier-context)\] studied this with a multi-university study and found no
 difference between the two. They suggest that since it makes no
 difference, other considerations (such as motivation) should be primary.
 
@@ -284,7 +284,7 @@ associate them with violence and racial or gender stereotypes, or simply
 find them unenjoyable.
 Whatever examples are chosen,
 the goal must be to move learners as quickly as possible
-from ``hard and boring'' to ``easy and exciting'' \[@repenning\].
+from ``hard and boring'' to ``easy and exciting'' \[[repenning](#repenning)\].
 
 ## 9) Remember that novices are not experts
 
@@ -320,7 +320,7 @@ Breaking the problem down into smaller single-concept pieces can reduce
 the cognitive load to something manageable.
 
 For example, a growing number of educators are including Parsons
-Problems in their pedagogic repertoire \[@parsons; @morrison-parsons\].
+Problems in their pedagogic repertoire \[[parsons](#parsons); [morrison-parsons](#morrison-parsons)\].
 Rather than writing programs from scratch, learners are given the lines
 of code they need to solve a problem, but in jumbled order. Re-ordering
 them to solve the problem correctly allows them to concentrate on
@@ -349,19 +349,19 @@ feel that they can be a programmer, and they just might become one.
 
 ## Bibliography
 
-\[@alvidrez-weinstein\]:
+\[alvidrez-weinstein\]:<a id="alvidrez-weinstein"></a>
 J. Alvidrez and R. S. Weinstein. Early teacher perceptions and later
 student academic achievement. *Journal of Educational Psychology*, 910
 (4):0 731--746, 1999.
 
-\[@barker-live-coding\]:
+\[barker-live-coding\]:<a id="barker-live-coding"></a>
 L. J. Barker, K. Garvin-Doxas, and E. Roberts. What can computer science
 learn from a fine arts approach to teaching? In *Proceedings of the 36th
 SIGCSE Technical Symposium on Computer Science Education*, SIGCSE '05,
 pages 421--425, New York, NY, USA, 2005. ACM. ISBN 1-58113-997-7,
 10.1145/1047344.1047482.
 
-\[@bouvier-context\]:
+\[bouvier-context\]:<a id="bouvier-context"></a>
 D. Bouvier, E. Lovellette, J. Matta, B. Alshaigy, B. A. Becker,
 M. Craig, J. Jackova, R. McCartney, K. Sanders, and M. Zarb. Novice
 programmers and the problem description effect. In *Proceedings of the
@@ -369,69 +369,69 @@ programmers and the problem description effect. In *Proceedings of the
 York, NY, USA, 2016. ACM. ISBN 978-1-4503-4882-9,
 10.1145/3024906.3024912.
 
-\[@brophy\]:
+\[brophy\]:<a id="brophy"></a>
 J. E. Brophy. Research on the self-fulfilling prophecy and teacher
 expectations. *Journal of Educational Psychology*, 750 (5):0 631--661,
 1983.
 
-\[@crouch-demo\]:
+\[crouch-demo\]:<a id="crouch-demo"></a>
 C. Crouch, A. P. Fagen, J. P. Callan, and E. Mazur. Classroom
 demonstrations: Learning tools or entertainment? *American Journal of
 Physics*, 720 (6):0 835--838, 2004, 10.1119/1.1707018.
 
-\[@gick-holyoak\]:
+\[gick-holyoak\]:<a id="gick-holyoak"></a>
 M. L. Gick and K. J. Holyoak. The cognitive basis of knowledge transfer.
 In S. M. Cormier and J. D. Hagman, editors, *Transfer of learning:
 Contemporary research and applications*. Academic Press, 1987.
 
-\[@guzdial-media\]:
+\[guzdial-media\]:<a id="guzdial-media"></a>
 M. Guzdial. Exploring hypotheses about media computation. In
 *Proceedings of the Ninth Annual International ACM Conference on
 International Computing Education Research*, ICER '13, pages 19--26,
 2013. ISBN 978-1-4503-2243-0.
 
-\[@guzdial-myths\]:
+\[guzdial-myths\]:<a id="guzdial-myths"></a>
 M. Guzdial. Top 10 myths about teaching computer science.
 <https://cacm.acm.org/blogs/blog-cacm/189498-top-10-myths-about-teaching-computer-science/fulltext>,
 2015. Accessed 3rd July 2017.
 
-\[@hannay\]:
+\[hannay\]:<a id="hannay"></a>
 J. E. Hannay, T. Dybå, E. Arisholm, , and D. I. Sjøberg. The
 effectiveness of pair programming: a meta-analysis. *Information and
 Software Technology*, 510 (7), 2009.
 
-\[@jussim-eccles\]:
+\[jussim-eccles\]:<a id="jussim-eccles"></a>
 L. Jussim and J. Eccles. Social perception, social stereotypes, and
 teacher expectations: Accuracy and the quest for the powerful
 self-fulfilling prophecy. *Advances in Experimental Social Psychology*,
 28:0 281--388, 1996.
 
-\[@mayer-subject\]:
+\[mayer-subject\]:<a id="mayer-subject"></a>
 R. E. Mayer. Teaching of subject matter. *Annual Review of Psychology*,
 550 (1):0 715--744, 2004, 10.1146/annurev.psych.55.082602.133124.
 
-\[@mazur-peer-instruction\]:
+\[mazur-peer-instruction\]:<a id="mazur-peer-instruction"></a>
 E. Mazur. *Peer Instruction: A User's Manual*. Prentice Hall, 1996.
 
-\[@mcdowell\]:
+\[mcdowell\]:<a id="mcdowell"></a>
 C. McDowell, L. Werner, H. E. Bullock, and J. Fernald. Pair programming
 improves student retention, confidence, and program quality.
 *Communications of the ACM*, 490 (8):0 90--95, August 2006.
 
-\[@miller-demo\]:
+\[miller-demo\]:<a id="miller-demo"></a>
 K. Miller, N. Lasry, K. Chu, and E. Mazur. Role of physics lecture
 demonstrations in conceptual learning. *Phys. Rev. ST
 Phys. Educ. Res.*, 9:0 020113, Sep 2013,
 10.1103/PhysRevSTPER.9.020113.
 
-\[@margulieux\]:
+\[margulieux\]:<a id="margulieux"></a>
 L. E. Margulieux, M. Guzdial, and R. Catrambone.  Subgoal-labeled
 instructional material improves performance and transfer in learning
 to develop mobile applications.  In *Proceedings of the Ninth Annual
 International Conference on International Computing Education
 Research*, pages 71--78, 2012, 10.1145/2361276.2361291.
 
-\[@morrison-subgoals\]:
+\[morrison-subgoals\]:<a id="morrison-subgoals"></a>
 B. B. Morrison, L. E. Margulieux, and M. Guzdial. Subgoals, context, and
 worked examples in learning computing problem solving. In *Proceedings
 of the Eleventh Annual International Conference on International
@@ -439,51 +439,51 @@ Computing Education Research*, ICER '15, pages 21--29, New York, NY, USA,
 2015. ACM. ISBN 978-1-4503-3630-7,
 10.1145/2787622.2787733.
 
-\[@morrison-parsons\]:
+\[morrison-parsons\]:<a id="morrison-parsons"></a>
 B. B. Morrison, L. E. Margulieux, B. Ericson, and M. Guzdial. Subgoals
 help students solve parsons problems. In *Proceedings of the 47th ACM
 Technical Symposium on Computing Science Education*, SIGCSE '16, pages
 42--47, New York, NY, USA, 2016. ACM. ISBN 978-1-4503-3685-7,
 10.1145/2839509.2844617.
 
-\[@parsons\]:
+\[parsons\]:<a id="parsons"></a>
 D. Parsons and P. Haden. Parsons programming puzzles: A fun and
 effective learning tool for first programming courses. In *Proceedings
 of the 8th Australasian Conference on Computing Education - Volume 52*,
 ACE '06, pages 157--163, Darlinghurst, Australia, Australia, 2006.
 Australian Computer Society, Inc. ISBN 1-920682-34-1.
 
-\[@patitsas-bimodal\]:
+\[patitsas-bimodal\]:<a id="patitsas-bimodal"></a>
 E. Patitsas, J. Berlin, M. Craig, and S. Easterbrook. Evidence that
 computer science grades are not bimodal. In *Proceedings of the 2016 ACM
 Conference on International Computing Education Research*, ICER '16,
 pages 113--121, New York, NY, USA, 2016. ACM. ISBN 978-1-4503-4449-4,
 10.1145/2960310.2960312.
 
-\[@porter-multi\]:
+\[porter-multi\]:<a id="porter-multi"></a>
 L. Porter, C. Bailey Lee, B. Simon, Q. Cutts, and D. Zingaro. Experience
 report: A multi-classroom report on the value of peer instruction. In
 *Proceedings of the 16th Annual Joint Conference on Innovation and
 Technology in Computer Science Education*, pages 138--142, 2011. ISBN
 978-1-4503-0697-3.
 
-\[@porter-success\]:
+\[porter-success\]:<a id="porter-success"></a>
 L. Porter, M. Guzdial, C. McDowell, and B. Simon. Success in
 introductory programming: What works? *Communications of the ACM*, 560
 (8), 2013.
 
-\[@repenning\]:
+\[repenning\]:<a id="repenning"></a>
 A. Repenning.  Moving beyond syntax: lessons from 20 years of blocks
 programing in AgentSheets.  Journal of Visual Languages and Sentient
 Systems, 3, July 2017, 10.18293/VLSS2017-010.
 
-\[@rubin-live-coding\]:
+\[rubin-live-coding\]:<a id="rubin-live-coding"></a>
 M. J. Rubin. The effectiveness of live-coding to teach introductory
 programming. In *Proceeding of the 44th ACM Technical Symposium on
 Computer Science Education*, SIGCSE '13, pages 651--656, New York, NY,
 USA, 2013. ACM. ISBN 978-1-4503-1868-6, 10.1145/2445196.2445388.
 
-\[@willingham-book\]:
+\[willingham-book\]:<a id="willingham-book"></a>
 D. T. Willingham. *Why don't students like school?: A cognitive
 scientist answers questions about how the mind works and what it means
 for the classroom*. John Wiley & Sons, 2009.
