@@ -95,7 +95,7 @@ is necessary. While it significantly outperforms lecture-based
 instruction in most situations, it can be problematic if ability levels
 differ widely (as they often do in introductory programming classes
 because of varied prior experience). Pair programming
-(Rule \\[pair-programming\\]) can be used to mitigate this.
+(Rule 5) can be used to mitigate this.
 
     for (int i = 1; i < 10; i++) {
         if (i < 3 || i > 8) {
