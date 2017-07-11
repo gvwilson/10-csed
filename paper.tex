@@ -1,29 +1,254 @@
-\documentclass{article}
-\usepackage[a4paper]{geometry}
-\usepackage{natbib}
-\usepackage{hyperref}
+% Template for PLoS
+% Version 3.4 January 2017
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended
+% to minimize problems and delays during our production
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% Once your paper is accepted for publication,
+% PLEASE REMOVE ALL TRACKED CHANGES in this file
+% and leave only the final text of your manuscript.
+% PLOS recommends the use of latexdiff to track changes during review, as this will help to maintain a clean tex file.
+% Visit https://www.ctan.org/pkg/latexdiff?lang=en for info or contact us at latex@plos.org.
+%
+%
+% There are no restrictions on package use within the LaTeX files except that
+% no packages listed in the template may be deleted.
+%
+% Please do not include colors or graphics in the text.
+%
+% The manuscript LaTeX source should be contained within a single file (do not use \input, \externaldocument, or similar commands).
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- FIGURES AND TABLES
+%
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+% - Figures should be uploaded separately from your manuscript file.
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission.
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission.
+% For figure citations, please use "Fig" instead of "Figure".
+% See http://journals.plos.org/plosone/s/figures for PLOS figure guidelines.
+%
+% Tables should be cell-based and may not contain:
+% - spacing/line breaks within cells to alter layout or alignment
+% - do not nest tabular environments (no tabular environments within tabular environments)
+% - no graphics or colored text (cell background color/shading OK)
+% See http://journals.plos.org/plosone/s/tables for table guidelines.
+%
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- EQUATIONS, MATH SYMBOLS, SUBSCRIPTS, AND SUPERSCRIPTS
+%
+% IMPORTANT
+% Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://journals.plos.org/plosone/s/latex
+%
+% For inline equations, please be sure to include all portions of an equation in the math environment.  For example, x$^2$ is incorrect; this should be formatted as $x^2$ (or $\mathrm{x}^2$ if the romanized font is desired).
+%
+% Do not include text that is not math in the math environment. For example, CO2 should be written as CO\textsubscript{2} instead of CO$_2$.
+%
+% Please add line breaks to long display equations when possible in order to fit size of the column.
+%
+% For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
+%
+% When adding superscript or subscripts outside of brackets/braces, please group using {}.  For example, change "[U(D,E,\gamma)]^2" to "{[U(D,E,\gamma)]}^2".
+%
+% Do not use \cal for caligraphic font.  Instead, use \mathcal{}
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% Please contact latex@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% Use Unicode characters when possible
+\usepackage[utf8x]{inputenc}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+% \usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% frames around boxes
 \usepackage{mdframed}
 
-\title{Ten Simple Rules for Teaching Programming}
-\author{Neil C. C. Brown\footnote{King's College London / neil.c.c.brown@kcl.ac.uk} and Greg Wilson\footnote{Rangle.io / gvwilson@third-bit.com}}
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+%\usepackage{setspace}
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+% Leave date blank
+\date{}
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{27.023pt}
+% \lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+% \lfoot{\sf PLOS}
+
+%% Include all macros below
+
+\newcommand{\rulemajor}[2]{\section{#1}\label{#2}}
+\newcommand{\ruleref}[1]{Rule~\ref{#1}}
+\newcommand{\url}[1]{\texttt{#1}}
+
+%% END MACROS SECTION
+
 
 \begin{document}
+\vspace*{0.2in}
 
-\maketitle
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf\newline{Ten simple rules for teaching programming} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+{Neil C.C.\ Brown}\textsuperscript{1{\ddag}*},
+{Greg~Wilson}\textsuperscript{2{\ddag}*}
+\\
+\bigskip
+\textbf{1} King's College London / neil.c.c.brown@kcl.ac.uk \\
+\textbf{2} Rangle.io / gvwilson@third-bit.com \\
+
+\bigskip
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+%
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+{\ddag} These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+% \ddag These authors also contributed equally to this work.
+
+% Current address notes
+% \textcurrency Current Address: Dept/Program/Center, Institution Name, City, State, Country % change symbol to "\textcurrency a" if more than one current address note
+% \textcurrency b Insert second current address
+% \textcurrency c Insert third current address
+
+% Deceased author note
+% \dag Deceased
+
+% Group/Consortium Author Note
+% \textpilcrow Membership list can be found in the Acknowledgments section.
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* corresponding author
+
+\end{flushleft}
+
+% Please keep the abstract below 300 words
+
+% \linenumbers
+
+% \section*{Abstract}
+% FIXME write abstrat
+
+% Please keep the Author Summary between 150 and 200 words
+% Use first person. PLOS ONE authors please skip this step.
+% Author Summary not valid for PLOS ONE submissions.
+% \section*{Author summary}
+% FIXME write author summary
 
 \section*{Introduction}
 
 Research from educational psychology suggests that teaching and learning are subject-specific
-activities~\citep{mayer-subject}: learning programming has a different set of challenges and techniques
+activities~\cite{mayer-subject}: learning programming has a different set of challenges and techniques
 than learning physics or learning to read and write.  Computing is a younger discipline than
 mathematics, physics, or biology, and while there have been correspondingly fewer studies of how best to teach it,
 there is a growing body of evidence about what works and doesn't.
 This paper presents ten simple rules that should be the foundation of any teaching of programming, whether
 formal or informal.
 
-\section{There is no geek gene}\label{gene}
+\rulemajor{There is no geek gene}{gene}
 
-\citet{guzdial-myths} refers to the belief that some people are born programmers and others aren't
+\cite{guzdial-myths} refers to the belief that some people are born programmers and others aren't
 as ``computing's most enduring and damaging myth.''
 This is often ``confirmed'' by looking at university grade distributions,
 which are commonly held to be bimodal:
@@ -33,7 +258,7 @@ Our first and most important rule is that this is wrong:
 competence at programming is not innate,
 but is rather a learned skill that can be acquired and improved with practice.
 
-The most powerful evidence for this comes from \citet{patitsas-bimodal}.
+The most powerful evidence for this comes from \cite{patitsas-bimodal}.
 They examined grade distributions in introductory computing courses at a large university,
 and found that only 5.8\% were actually multi-modal.
 More damningly,
@@ -44,14 +269,14 @@ and that those faculty were even more likely to see the distributions as bimodal
 if they believed some students are innately predisposed to do well in computer science.
 
 Beliefs such as this are known to have powerful effects on education outcomes
-\citep{alvidrez-weinstein,brophy,jussim-eccles}.
+\cite{alvidrez-weinstein,brophy,jussim-eccles}.
 If instructors believe that ``some kids get it and some kids don't'',
 they will (consciously or unconsciously) invest less in those whom they put in the second category.
 When combined with cultural stereotypes about who is and isn't a "natural programmer",
 the downward spiral of under-achievement that results from differential attention
 may be partly responsible for the gender imbalance in computing.
 
-\section{Use peer instruction}\label{peer-instruction}
+\rulemajor{Use peer instruction}{peer-instruction}
 
 One-on-one tutoring is perhaps the ideal form of teaching:
 all of a teacher's attention can be focused on one student,
@@ -64,9 +289,9 @@ How can teachers possibly hope to clear up many learners' different misconceptio
 in these larger settings in a reasonable time?
 
 The best method developed so far for larger-scale classrooms is called Peer Instruction.
-Originally created by Eric Mazur at Harvard~\citep{mazur-peer-instruction},
+Originally created by Eric Mazur at Harvard~\cite{mazur-peer-instruction},
 it has been studied extensively in a wide variety of contexts,
-including programming \citep{porter-multi,porter-success}.
+including programming \cite{porter-multi,porter-success}.
 In simplified form,
 peer instruction proceeds in three phases:
 
@@ -76,7 +301,7 @@ peer instruction proceeds in three phases:
 
 \item The instructor then gives learners a multiple choice question
   that probes for misconceptions rather than simple factual recall.
-  A programming example is given in figure \ref{fig:mcq}
+  A programming example is given in Figure~\ref{fig:mcq}
   which relates to integer comparison and loops.
   There is no point asking a trivial question that all students will get right.
   The ideal questions are those where students are most likely to vote equally for each of the options.
@@ -106,31 +331,12 @@ While it significantly outperforms lecture-based instruction in most situations,
 it can be problematic if ability levels differ widely
 (as they often do in introductory programming classes
 because of varied prior experience).
-Pair programming (Rule~\ref{pair-programming}) can be used to mitigate this.
+Pair programming (\ruleref{pair-programming}) can be used to mitigate this.
 
-\begin{figure}
-\begin{mdframed}
-\begin{verbatim}
-for (int i = 1; i < 10; i++) {
-    if (i < 3 || i >= 8) {
-        System.out.println("Yes");
-    }
-}
-\end{verbatim}
-How many times will the above code print out the word Yes?\\
-a) 10\\
-b) 5\\
-c) 4\\
-d) 3
-\label{fig:mcq}
-\caption{An example multiple choice question probing learners' understanding of loops and integer comparisons.}
-\end{mdframed}
-\end{figure}
-
-\section{Use live coding}\label{live-coding}
+\rulemajor{Use live coding}{live-coding}
 
 Rather than using slides,
-instructors should create programs in front of their learners~\citep{rubin-live-coding}.
+instructors should create programs in front of their learners~\cite{rubin-live-coding}.
 This is more effective for multiple reasons:
 
 \begin{enumerate}
@@ -156,7 +362,7 @@ This is more effective for multiple reasons:
   this, but it's left out of most textbooks.
 
 \item Watching instructors make mistakes shows learners that it's
-  alright to make mistakes of their own~\citep{barker-live-coding}.
+  alright to make mistakes of their own~\cite{barker-live-coding}.
   Most people model the behavior of their teachers: if the instructor
   isn't embarrassed about making and talking about mistakes, learners
   will be more comfortable doing so too.
@@ -175,7 +381,7 @@ avoided or worked around:
 \item Instructors can spend too much time typing in boilerplate code
   that is needed by the lesson, but not directly relevant to it (such
   as library import statements), can distract learners from the
-  intended thrust of a lesson.  As \citet{willingham-book} says,
+  intended thrust of a lesson.  As \cite{willingham-book} says,
   ``Memory is the residue of thought''; if the instructor spends their
   time typing boilerplate, that may be all that learners take away.
   This can be avoided by starting with a partial skeleton that
@@ -185,15 +391,15 @@ avoided or worked around:
 
 \end{enumerate}
 
-\section{Have students make predictions}\label{predictions}
+\rulemajor{Have students make predictions}{predictions}
 
 When instructors are using live coding, they usually run the program
 several times during its development to show what it does.  Research
 from peer instruction in physics education shows that learners who
 observe a demonstration \textit{do not} learn better than those who
-did not see the demonstration~\citep{crouch-demo}, and in fact many
+did not see the demonstration~\cite{crouch-demo}, and in fact many
 learners misremember the outcome of demonstrations
-afterwards~\citep{miller-demo}.  In other words, demonstrations can
+afterwards~\cite{miller-demo}.  In other words, demonstrations can
 actually be useless or actively harmful.
 
 The key to making demonstrations more effective is
@@ -208,15 +414,15 @@ regardless of whether this hypothesis is true,
 instructors should be careful not to punish or criticise students who predicted wrongly,
 but rather to use those incorrect predictions as a spur to further exploration.
 
-\section{Use pair programming}\label{pair-programming}
+\rulemajor{Use pair programming}{pair-programming}
 
 Pair programming is a software development practice
 in which two programmers share one computer.
 One person (called the driver) does the typing,
 while the other (called the navigator) offers comments and suggestions.
 The two switch roles several times per hour.
-Pair programming is a good practice in real-life programming \citep{hannay},
-and also a good way to teach \citep{mcdowell}.
+Pair programming is a good practice in real-life programming \cite{hannay},
+and also a good way to teach \cite{mcdowell}.
 Partners can not only help each other out during practical exercises,
 but can also clarify each other's misconceptions when the solution is presented.
 
@@ -230,7 +436,7 @@ so that no one feels singled out.
 It's also important to have people switch roles within each pair three or four times per hour,
 so that the stronger personality in each pair does not dominate the session.
 
-\section{Use worked examples with labelled subgoals}\label{worked-examples}
+\rulemajor{Use worked examples with labelled subgoals}{worked-examples}
 
 Learning to program involves learning the syntax and semantics of a programming language,
 but also involves learning how to construct programs.
@@ -245,49 +451,16 @@ finding the first surname alphabetically from a list of names
 may seem like quite different problems to them,
 even though more advanced programmers would recognise them as isomorphic.
 
-\citet{morrison-subgoals,morrison-parsons,margulieux} have shown that students perform better
+\cite{morrison-subgoals,morrison-parsons,margulieux} have shown that students perform better
 when worked examples are broken down into steps (or subgoals)
-which are given names (or labels) -- an example is given in figure~\ref{fig:subgoal}.
+which are given names (or labels) -- an example is given in Figure~\ref{fig:subgoal}.
 Subgoal labels provide a structure which students can apply to future tasks that they attempt themselves,
 and allow them to communicate with their peers and instructors more efficiently.
 
-\begin{figure}
-\begin{mdframed}
-\noindent
-\textbf{Conventional Materials}
-\begin{verbatim}
-1. Click on "My Blocks" to see the blocks for components you created.
-2. Click on "clap"
-3. Drag out a when clap.Touched block
-4. Click on “clapSound”
-5. Drag out call clapSound.Play
-6. Connect it after when clap.Touched
-\end{verbatim}
-
-\noindent
-\textbf{Subgoal Labeled Materials}
-\begin{verbatim}
-Handle Events from My Blocks
-
-1. Click on "My Blocks" to see the blocks for components you created.
-2. Click on "clap"
-3. Drag out a when clap.Touched block
-
-Set Output from My Blocks
-
-4. Click on “clapSound” and
-5. Drag out call clapSound.Play
-6. Connect it after when clap.Touched
-\end{verbatim}
-\label{fig:subgoal}
-\caption{An example of subgoal labeling (taken from \cite{margulieux})}
-\end{mdframed}
-\end{figure}
-
-\section{Stick to one language}\label{one-language}
+\rulemajor{Stick to one language}{one-language}
 
 A principle that applies across all areas of education is that
-transference only comes with mastery \citep{gick-holyoak}.
+transference only comes with mastery \cite{gick-holyoak}.
 Courses should therefore stick to one language until learners have progressed far enough with it
 to be able to distinguish the forest from the trees.
 While an experienced programmer can,
@@ -300,20 +473,20 @@ Attempting to force transference too early---e.g.,
 requiring them to switch from Python to JavaScript in order to do a web programming course
 early in their education---will confuse learners and erode their confidence.
 
-\section{Use authentic tasks}\label{authentic-tasks}
+\rulemajor{Use authentic tasks}{authentic-tasks}
 
 Guzdial et al.\ found that having learners manipulate images, audio, and video
 in their early programming assignments
 increased retention in two senses:
 learners remembered more of the material when re-tested after a delay,
-and were more likely to stay in computing programs \citep{guzdial-media}.
+and were more likely to stay in computing programs \cite{guzdial-media}.
 This is a particular instance of a larger observation:
 learners find authentic tasks more engaging than abstracted examples.
 
 A classic question in computing (and mathematics) education
 is whether problems are better with context (e.g., find the highest student grade)
 or without (e.g. find the maximum of the list of numbers).
-\citet{bouvier-context} examined this with a multi-university study
+\cite{bouvier-context} examined this with a multi-university study
 and found no difference between the two.
 They suggest that since it makes no difference,
 other considerations (such as motivation) should be primary.
@@ -325,9 +498,9 @@ but some learners may associate them with violence and racial or gender stereoty
 or simply find them unenjoyable.
 Whatever examples are chosen,
 the goal must be to move learners as quickly as possible
-from ``hard and boring'' to ``easy and exciting'' \citep{repenning}.
+from ``hard and boring'' to ``easy and exciting'' \cite{repenning}.
 
-\section{Remember that novices are not experts}\label{not-experts}
+\rulemajor{Remember that novices are not experts}{not-experts}
 
 This principle is tautological, but it is easily forgotten.
 Novices program differently than experts,
@@ -356,7 +529,7 @@ So in programming,
 we must take care to use small, self-contained tasks at a level suitable for novices,
 with tools that suit their needs, and without scoffing.
 
-\section{Don't just code}\label{not-just-code}
+\rulemajor{Don't just code}{not-just-code}
 
 Our final rule for teaching programming is that you don't have to program to do it.
 Between syntax, semantics, algorithms, and design,
@@ -366,7 +539,7 @@ can reduce the cognitive load to something manageable.
 
 For example,
 a growing number of educators are including Parsons Problems
-in their pedagogic repertoire~\citep{parsons,morrison-parsons}.
+in their pedagogic repertoire~\cite{parsons,morrison-parsons}.
 Rather than writing programs from scratch,
 learners are given the lines of code they need to solve a problem,
 but in jumbled order.
@@ -397,7 +570,77 @@ or that any existing skill they have (no matter when or how acquired) is worthle
 Make your learners feel that they can be a programmer,
 and they just might become one.
 
-\bibliographystyle{abbrvnat}
+\pagebreak
+
+\begin{figure}[h]
+\begin{mdframed}
+\begin{verbatim}
+for (int i = 1; i < 10; i++) {
+    if (i < 3 || i >= 8) {
+        System.out.println("Yes");
+    }
+}
+\end{verbatim}
+How many times will the above code print out the word Yes?\\
+a) 10\\
+b) 5\\
+c) 4\\
+d) 3
+\end{mdframed}
+\caption{An example multiple choice question probing learners' understanding of loops and integer comparisons.}
+\label{fig:mcq}
+\end{figure}
+
+\begin{figure}[h]
+\begin{mdframed}
+\noindent
+\textbf{Conventional Materials}
+\begin{verbatim}
+1. Click on "My Blocks" to see the blocks for components you created.
+2. Click on "clap"
+3. Drag out a when clap.Touched block
+4. Click on “clapSound”
+5. Drag out call clapSound.Play
+6. Connect it after when clap.Touched
+\end{verbatim}
+
+\noindent
+\textbf{Subgoal Labeled Materials}
+\begin{verbatim}
+Handle Events from My Blocks
+
+1. Click on "My Blocks" to see the blocks for components you created.
+2. Click on "clap"
+3. Drag out a when clap.Touched block
+
+Set Output from My Blocks
+
+4. Click on "clapSound" and
+5. Drag out call clapSound.Play
+6. Connect it after when clap.Touched
+\end{verbatim}
+\end{mdframed}
+\caption{An example of subgoal labeling (taken from \cite{margulieux})}
+\label{fig:subgoal}
+\end{figure}
+
+% \nolinenumbers
+
+% Either type in your references using
+% \begin{thebibliography}{}
+% \bibitem{}
+% Text
+% \end{thebibliography}
+%
+% or
+%
+% Compile your BiBTeX database using our plos2015.bst
+% style file and paste the contents of your .bbl file
+% here. See http://journals.plos.org/plosone/s/latex for
+% step-by-step instructions.
+
+\pagebreak
+
 \bibliography{paper}
 
 \end{document}
