@@ -242,7 +242,7 @@ Research from educational psychology suggests that teaching and learning are sub
 activities~\cite{mayer-subject}: learning programming has a different set of challenges and techniques
 than learning physics or learning to read and write.  Computing is a younger discipline than
 mathematics, physics, or biology, and while there have been correspondingly fewer studies of how best to teach it,
-there is a growing body of evidence about what works and doesn't.
+there is a growing body of evidence about what works and what doesn't.
 This paper presents ten simple rules that should be the foundation of any teaching of programming, whether
 formal or informal.
 
@@ -266,13 +266,13 @@ they found that computer science faculty were more likely to see distributions a
 if they thought those grades came from a programming class
 than if they believed the grades came from some other kind of class,
 and that those faculty were even more likely to see the distributions as bimodal
-if they believed some students are innately predisposed to do well in computer science.
+if they believed that some students are innately predisposed to do well in computer science.
 
 Beliefs such as this are known to have powerful effects on education outcomes
 \cite{alvidrez-weinstein,brophy,jussim-eccles}.
 If instructors believe that ``some kids get it and some kids don't'',
 they will (consciously or unconsciously) invest less in those whom they put in the second category.
-When combined with cultural stereotypes about who is and isn't a "natural programmer",
+When combined with cultural stereotypes about who is and isn't a ``natural programmer'',
 the downward spiral of under-achievement that results from differential attention
 may be partly responsible for the gender imbalance in computing.
 
@@ -302,14 +302,14 @@ peer instruction proceeds in three phases:
 \item The instructor then gives learners a multiple choice question
   that probes for misconceptions rather than simple factual recall.
   A programming example is given in Figure~\ref{fig:mcq}
-  which relates to integer comparison and loops.
-  There is no point asking a trivial question that all students will get right or one with wrong answers which no student will pick.
-  The ideal questions are those where 40--60\% of students are likely to get the right answer first time, and where every wrong answer corresponds to a misconception and will be picked by at least some students~\cite[p23]{nrc-reaching}.
+  which relates to integer comparison and loops.  The multiple choice question must be well designed.
+  There is no point asking a trivial question that all students will get right or one with meaningless wrong answers which no student will pick.
+  The ideal questions are those where 40--60\% of students are likely to get the right answer first time~\cite[p23]{nrc-reaching}, and where every wrong answer corresponds to a misconception that will cause it to be picked by at least some students.
 
 \item Learners then vote on the answer to the question.
 
   \begin{itemize}
-  \item If they all have the right answer, move on.
+  \item If they all have the right answer, the instructor can move on.
   \item If they all have the same wrong answer,
     the instructor addresses that specific misconception.
   \item If they have a mix of right and wrong answers,
@@ -344,18 +344,18 @@ This is more effective for multiple reasons:
 \item It enables instructors to be more responsive to ``what if?''
   questions. Where a slide deck is like a highway, live coding
   allows instructors to go off road and follow their learners'
-  interests.
+  interests or answer unanticipated questions.
 
 \item It facilitates unintended knowledge transfer: students learn
   more than the instructor consciously intends to teach by watching
   \textit{how} instructors do things.  The extra knowledge may be
   high-level (e.g., whether a program is written top-down or
-  bottom-up) or fairly low-level (e.g., using keyboard shortcuts).
+  bottom-up) or fairly low-level (e.g., learning useful editor shortcuts).
 
 \item It slows the instructor down: if the instructor has to type in
   the program as they go along, they can only go twice as fast as
   their learners, rather than ten-fold faster as they could with
-  slides.
+  slides -- which risks leaving everyone behind.
 
 \item Learners get to see how instructors diagnose and correct
   mistakes. Novices are going to spend most of their time doing
@@ -380,7 +380,7 @@ avoided or worked around:
 
 \item Instructors can spend too much time typing in boilerplate code
   that is needed by the lesson, but not directly relevant to it (such
-  as library import statements), can distract learners from the
+  as library import statements). Not only does this slow things down, it can distract learners from the
   intended thrust of a lesson.  As Willingham~\cite{willingham-book} says,
   ``Memory is the residue of thought''; if the instructor spends their
   time typing boilerplate, that may be all that learners take away.
@@ -394,9 +394,9 @@ avoided or worked around:
 \rulemajor{Have students make predictions}{predictions}
 
 When instructors are using live coding, they usually run the program
-several times during its development to show what it does.  Research
+several times during its development to show what it does.  Surprising research
 from peer instruction in physics education shows that learners who
-observe a demonstration \textit{do not} learn better than those who
+observe a demonstration \textit{do not learn better} than those who
 did not see the demonstration~\cite{crouch-demo}, and in fact many
 learners misremember the outcome of demonstrations
 afterwards~\cite{miller-demo}.  In other words, demonstrations can
@@ -407,12 +407,12 @@ to make learners predict the outcome of the demonstration before performing it.
 Crucially, their prediction should be in some way recorded or public,
 e.g. by a show of hands,
 by holding up a cue card (A/B/C/D),
-or by talking to their neighbour.
+or by talking to their neighbor.
 We speculate that the sting of being publicly wrong leads learners to pay more attention
 and to reflect on what they are learning;
 regardless of whether this hypothesis is true,
 instructors should be careful not to punish or criticise students who predicted wrongly,
-but rather to use those incorrect predictions as a spur to further exploration.
+but rather to use those incorrect predictions as a spur to further exploration and explanation.
 
 \rulemajor{Use pair programming}{pair-programming}
 
@@ -448,14 +448,13 @@ But since learners are novices,
 they may not see the similarity between examples:
 finding the highest rainfall from a list of numbers and
 finding the first surname alphabetically from a list of names
-may seem like quite different problems to them,
+may seem like quite different problems to learners,
 even though more advanced programmers would recognise them as isomorphic.
 
 Morrison et al.~\cite{morrison-subgoals,morrison-parsons,margulieux} have shown that students perform better
 when worked examples are broken down into steps (or subgoals)
 which are given names (or labels) -- an example is given in Figure~\ref{fig:subgoal}.
-Subgoal labels provide a structure which students can apply to future tasks that they attempt themselves,
-and allow them to communicate with their peers and instructors more efficiently.
+Subgoal labels provide a structure which allow learners to see the similarities between coding problems and to communicate with their peers and instructors more efficiently.  Learners can then apply the labels to future tasks that they attempt themselves.
 
 \rulemajor{Stick to one language}{one-language}
 
@@ -483,12 +482,6 @@ and were more likely to stay in computing programs~\cite{guzdial-media}.
 This is a particular instance of a larger observation:
 learners find authentic tasks more engaging than abstracted examples.
 
-It is also useful for motivation to make sure that students can accomplish a visible result
-quickly.  Providing pre-written software libraries or source code can help to start students
-closer to a meaningful result.  The idea that students must write all the code they need
-themselves is the relic of a bygone era of home microcomputers (and it was not true even then).
-Pick the task that you actually want to the students to engage in, and provide everything else.
-
 A classic question in computing (and mathematics) education
 is whether problems are better with context (e.g., find the highest student grade)
 or without (e.g. find the maximum of the list of numbers).
@@ -497,7 +490,7 @@ and found no difference between the two.
 They suggest that since it makes no difference,
 other considerations (such as motivation) should be primary.
 
-One caution is that context can inadvertently exclude some people while drawing others in.
+One caution about choosing context is that context can inadvertently exclude some people while drawing others in.
 For example,
 many educators use computer games as a motivating example for programming classes,
 but some learners may associate them with violence and racial or gender stereotypes,
@@ -505,6 +498,12 @@ or simply find them unenjoyable.
 Whatever examples are chosen,
 the goal must be to move learners as quickly as possible
 from ``hard and boring'' to ``easy and exciting'' \cite{repenning}.
+
+To help students accomplish a visible and satisfting result
+quickly, instructors can provide some pre-written software libraries or source code that start students
+closer to the end goal.  The idea that students must start from scratch and write all the code they need
+themselves is the relic of a bygone era of home microcomputers (and it was not true even then).
+Pick the task that you actually want to the students to engage in, and provide everything else pre-made.
 
 \rulemajor{Remember that novices are not experts}{not-experts}
 
@@ -538,8 +537,8 @@ with tools that suit their needs, and without scoffing.
 \rulemajor{Don't just code}{not-just-code}
 
 Our final rule for teaching programming is that you don't have to program to do it.
-Between syntax, semantics, algorithms, and design,
-examples that seem small to instructors can easily overwhelm novices.
+Faced with the challenges of learning syntax, semantics, algorithms, and design,
+examples that seem small to instructors can still easily overwhelm novices.
 Breaking the problem down into smaller single-concept pieces
 can reduce the cognitive load to something manageable.
 
@@ -553,11 +552,12 @@ Re-ordering them to solve the problem correctly
 allows them to concentrate on mastering control flow
 without having to devote mental energy to recalling syntax
 or the specifics of library functions.  They are also liked by learners; Ericson et al.~\cite{ericson-ebook} found
-that learners were more likely to attempt Parsons Problems than nearby multiple choice questions.
+that learners were more likely to attempt Parsons Problems than nearby multiple choice questions in an ebook.
 
 \section*{Conclusion}
 
-Like anything involving human subjects,
+The ten rules presented here are backed up by scientific research.
+Like any research involving human subjects,
 studies of computing education must necessarily be hedged with qualifiers.
 However,
 we do know a great deal,
@@ -566,11 +566,11 @@ Venues like SIGCSE (\url{http://sigcse.org/}), ITiCSE (\url{http://iticse.acm.or
 present a growing number of rigorous, insightful studies
 with immediate practical application.
 Future work may overturn or qualify some of our ten simple rules,
-but they form a solid basis for any educational effort.
+but they form a solid basis for any educational effort to the best of our current knowledge.
 
 We offer one final observation: do not forget the human element.
 Programmers have a reputation for pouring scorn on certain programming languages (e.g., PHP),
-or for gatekeeping (e.g., stating that you can't learn programming if you didn't start young).
+or for gatekeeping (e.g., stating that you cannot learn programming if you did not start young).
 If you are teaching someone to program,
 the last thing you want to do is make them feel like they can't succeed
 or that any existing skill they have (no matter when or how acquired) is worthless.
