@@ -173,6 +173,10 @@
 \newcommand{\ruleref}[1]{Rule~\ref{#1}}
 \newcommand{\url}[1]{\texttt{#1}}
 
+% To hide this, toggle the two macros below:
+%\newcommand{\evidence}[1]{}
+\newcommand{\evidence}[1]{\vspace{-0.3cm}\textbf{Evidence strength: #1}\vspace{0.5cm}}
+
 %% END MACROS SECTION
 
 
@@ -247,6 +251,7 @@ This paper presents ten quick tips that should be the foundation of any teaching
 formal or informal.
 
 \rulemajor{There is no geek gene}{gene}
+\evidence{Medium\footnote{Our evidence strength is an informal assessment, factoring in whether the effect has been replicated, and whether it has been shown specifically in computing, or only in other disciplines from which we believe it will transfer.}}
 
 Guzdial~\cite{guzdial-myths} refers to the belief that some people are born programmers and others aren't
 as ``computing's most enduring and damaging myth.''
@@ -277,6 +282,7 @@ the downward spiral of under-achievement that results from differential attentio
 may be partly responsible for the gender imbalance in computing.
 
 \rulemajor{Use peer instruction}{peer-instruction}
+\evidence{Very high}
 
 One-on-one tutoring is perhaps the ideal form of teaching:
 all of a teacher's attention can be focused on one student,
@@ -334,6 +340,7 @@ because of varied prior experience).
 Pair programming (\ruleref{pair-programming}) can be used to mitigate this.
 
 \rulemajor{Use live coding}{live-coding}
+\evidence{Low}
 
 Rather than using slides,
 instructors should create programs in front of their learners~\cite{rubin-live-coding}.
@@ -392,6 +399,7 @@ avoided or worked around:
 \end{enumerate}
 
 \rulemajor{Have students make predictions}{predictions}
+\evidence{Low}
 
 When instructors are using live coding, they usually run the program
 several times during its development to show what it does.  Surprising research
@@ -415,6 +423,7 @@ instructors should be careful not to punish or criticise students who predicted 
 but rather to use those incorrect predictions as a spur to further exploration and explanation.
 
 \rulemajor{Use pair programming}{pair-programming}
+\evidence{High}
 
 Pair programming is a software development practice
 in which two programmers share one computer.
@@ -437,6 +446,7 @@ It's also important to have people switch roles within each pair three or four t
 so that the stronger personality in each pair does not dominate the session.
 
 \rulemajor{Use worked examples with labelled subgoals}{worked-examples}
+\evidence{High}
 
 Learning to program involves learning the syntax and semantics of a programming language,
 but also involves learning how to construct programs.
@@ -457,6 +467,7 @@ which are given names (or labels) -- an example is given in Figure~\ref{fig:subg
 Subgoal labels provide a structure which allow learners to see the similarities between coding problems and to communicate with their peers and instructors more efficiently.  Learners can then apply the labels to future tasks that they attempt themselves.
 
 \rulemajor{Stick to one language}{one-language}
+\evidence{Low}
 
 A principle that applies across all areas of education is that
 transference only comes with mastery \cite{gick-holyoak}.
@@ -473,6 +484,7 @@ requiring them to switch from Python to JavaScript in order to do a web programm
 early in their education---will confuse learners and erode their confidence.
 
 \rulemajor{Use authentic tasks}{authentic-tasks}
+\evidence{Medium}
 
 Guzdial et al.\ found that having learners manipulate images, audio, and video
 in their early programming assignments
@@ -499,13 +511,14 @@ Whatever examples are chosen,
 the goal must be to move learners as quickly as possible
 from ``hard and boring'' to ``easy and exciting'' \cite{repenning}.
 
-To help students accomplish a visible and satisfting result
+To help students accomplish a visible and satisfying result
 quickly, instructors can provide some pre-written software libraries or source code that start students
 closer to the end goal.  The idea that students must start from scratch and write all the code they need
 themselves is the relic of a bygone era of home microcomputers (and it was not true even then).
 Pick the task that you actually want to the students to engage in, and provide everything else pre-made.
 
 \rulemajor{Remember that novices are not experts}{not-experts}
+\evidence{Medium}
 
 This principle is tautological, but it is easily forgotten.
 Novices program differently than experts~\cite{parnin-expertise},
@@ -535,6 +548,7 @@ we must take care to use small, self-contained tasks at a level suitable for nov
 with tools that suit their needs, and without scoffing.
 
 \rulemajor{Don't just code}{not-just-code}
+\evidence{Medium}
 
 Our final tip for teaching programming is that you don't have to program to do it.
 Faced with the challenges of learning syntax, semantics, algorithms, and design,
@@ -579,7 +593,7 @@ and they just might become one.
 
 \section*{Acknowledgments}
 
-We are grateful to Barbara Ericson for her comments on a draft of this article.
+We are grateful to Barbara Ericson and Leo Porter for their comments on a draft of this article.
 
 \pagebreak
 
