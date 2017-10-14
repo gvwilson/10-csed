@@ -174,8 +174,8 @@
 \newcommand{\url}[1]{\texttt{#1}}
 
 % To hide this, toggle the two macros below:
-%\newcommand{\evidence}[1]{}
-\newcommand{\evidence}[1]{\vspace{-0.3cm}\textbf{Evidence strength: #1}\vspace{0.5cm}}
+\newcommand{\evidence}[1]{}
+%\newcommand{\evidence}[1]{\vspace{-0.3cm}\textbf{Evidence strength: #1}\vspace{0.5cm}}
 
 %% END MACROS SECTION
 
@@ -250,7 +250,11 @@ there is a growing body of evidence about what works and what doesn't.
 This paper presents ten quick tips that should be the foundation of any teaching of programming, whether
 formal or informal.
 
-\rulemajor{There is no geek gene}{gene}
+These tips will be useful to anyone teaching programming at any level
+and to any audience. A larger list aimed primarily at K-12 audiences
+can be found at \cite{cs-teaching-tips}.
+
+\rulemajor{Remember that there is no geek gene}{gene}
 \evidence{Medium\footnote{Our evidence strength is an informal assessment, factoring in whether the effect has been replicated, and whether it has been shown specifically in computing, or only in other disciplines from which we believe it will transfer.}}
 
 Guzdial~\cite{guzdial-myths} refers to the belief that some people are born programmers and others aren't
@@ -282,7 +286,7 @@ the downward spiral of under-achievement that results from differential attentio
 may be partly responsible for the gender imbalance in computing.
 
 \rulemajor{Use peer instruction}{peer-instruction}
-\evidence{Very high}
+\evidence{High}
 
 One-on-one tutoring is perhaps the ideal form of teaching:
 all of a teacher's attention can be focused on one student,
@@ -398,6 +402,11 @@ avoided or worked around:
 
 \end{enumerate}
 
+Note that live coding does not always have to start with a blank screen:
+instructors may give students some starter code
+that relies solely on concepts they have already mastered,
+and then extend it or modify it with live coding.
+
 \rulemajor{Have students make predictions}{predictions}
 \evidence{Low}
 
@@ -500,7 +509,7 @@ or without (e.g. find the maximum of the list of numbers).
 Bouvier et al.~\cite{bouvier-context} examined this with a multi-university study
 and found no difference between the two.
 They suggest that since it makes no difference,
-other considerations (such as motivation) should be primary.
+other considerations (such as motivation) should be given priority.
 
 One caution about choosing context is that context can inadvertently exclude some people while drawing others in.
 For example,
@@ -583,7 +592,7 @@ Future work may overturn or qualify some of our ten tips,
 but they form a solid basis for any educational effort to the best of our current knowledge.
 
 We offer one final observation: do not forget the human element.
-Programmers have a reputation for pouring scorn on certain programming languages (e.g., PHP),
+Programmers have a reputation for pouring scorn on certain programming tools (e.g., pouring scorn on spreadsheets),
 or for gatekeeping (e.g., stating that you cannot learn programming if you did not start young).
 If you are teaching someone to program,
 the last thing you want to do is make them feel like they can't succeed
@@ -594,6 +603,23 @@ and they just might become one.
 \section*{Acknowledgments}
 
 We are grateful to Barbara Ericson and Leo Porter for their comments on a draft of this article.
+
+\pagebreak
+
+\section*{Ten Quick Tips for Teaching Programming}
+
+\begin{enumerate}
+\item Remember that there is no geek gene.
+\item Use peer instruction.
+\item Use live coding.
+\item Have students make predictions.
+\item Use pair programming.
+\item Use worked examples with labelled subgoals.
+\item Stick to one language.
+\item Use authentic tasks.
+\item Remember that novices are not experts.
+\item Don't just code.
+\end{enumerate}
 
 \pagebreak
 
@@ -624,7 +650,7 @@ d) 3
 1. Click on "My Blocks" to see the blocks for components you created.
 2. Click on "clap"
 3. Drag out a when clap.Touched block
-4. Click on “clapSound”
+4. Click on "clapSound"
 5. Drag out call clapSound.Play
 6. Connect it after when clap.Touched
 \end{verbatim}
