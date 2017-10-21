@@ -1,224 +1,48 @@
-Reviewer #1: I can certainly imagine that many faculty teaching
-bioinformatics have seen the need to teach some programming as well,
-so "Ten Quick Tips" might be very useful. I have the following
-concerns:
+To whom it may concern,
 
-(1) "Teaching programming" has many different meanings. Strategies
-used for a stand-alone programming course (CS101) may be very
-different from approaches for a programming/scripting part of a
-bioinformatics course. I am certain that there is much more
-engineering discipline (variable naming strategies, commenting) taught
-in CS departments than a biologist might include in a bioinformatics
-course. The paper would be much more helpful if it more clearly
-identified its intended audience.
+Please find attached our revisions to our paper.  We have included
+comments to the reviewers below, and look forward to hearing from you.
 
-Thus, I suggest that the number one "tip" for teaching programming is
-to be very clear about the scope of the instruction. Biologists will
-be very empowered if they learn the Unix command line and an editor
-(neither of which is programming), and then learn to write some simple
-python scripts to automate/make reproducible an analysis strategy. But
-programming more advanced bioinformatics students will have a
-different focus. The paper needs to state clearly who will be learning
-the programming that these tips will help.
+Sincerely,
+Dr. Neil C.C. Brown
+Dr. Greg Wilson
 
-> Paragraph added to introduction to clarify intended audience.
+Reviewer #1
 
-(2) While many of the suggestions make sense in the larger programming
-context (pair-programming, live-coding, peer-instruction), it is less
-clear to me that they are correct for beginning programmers. I
-strongly disagree with the (inaptly titled) section "Don't just code"
-and the comment "you don't have to program to do it". For beginners
-(who are not CS students), the more coding, the better.
+- Paragraph added to introduction to clarify intended audience.
 
-> The research that we reference indicates otherwise.
+- We agree that "the more coding, the better", but the research that
+  we reference shows that the suggestions we make for including other
+  teaching activities are well-founded for beginning programmers as
+  well as those who are more experienced.  In particular, Porter et al
+  (2011) is strong evidence for the benefits of peer instruction for
+  novice programmers.
 
-(3) The first "tip," unlike most of the others, does not tell the
-reader what to do. Perhaps the declarative statement is "Convince your
-students they can master the material."
+- The wording of the first tip has been changed to make it imperative
+  for consistency with the others.
 
-> Wording changed to imperative (aimed at instructors).
+- We have added a paragraph to explain that live coding doesn't always
+  have to start with a blank page (or screen).
 
-(4) While peer instruction is clearly useful for many subjects, it is
-less clear that it is as important for programming. I suspect that
-most first time programmers are much more frustrated by the mechanics
-of interacting with a computer, computer language, and the
-peculiarities of data types, than concepts like loops and functions.
+- The reviewer is correct: the study by Bouvier et al (2016) showed
+  that providing context is not necessarily helpful.
 
-> Again, the research that we reference indicates otherwise (e.g.,
-> Porter et al 2011).
+Reviewer #2
 
-(5) While I strongly agree that it is very helpful for students to
-explore alternative problem solution strategies, live programming is
-both slow, and it does not give the students the prepared text they
-need to reproduce the result. Here, I think a more useful strategy is
-to have some non-judgmental discussion of how the students solved the
-homework problems.
+- The first paragraph of Rule 4 (Have students make predictions)
+  connects live coding to having students make predictions. We agree
+  that directing students' attention to particular aspects of the
+  process would probably improve outcomes, but to our knowledge, no
+  one has (yet) done this study for computing education.
 
-> Paragraph added to explain that live coding doesn't always have to
-> start with a blank screen.
+- We have added a short version of all the recommendations in a box
+  for reference as suggested.
 
-(6) I strongly agree with the "use authentic tasks" suggestion, and
-Bioinformatics makes this quite simple. But the section seems to
-suggest that providing context is not necessarily helpful. The
-importance of context will also depend on the students and topics
-involved (do the problems help the students understand other
-material).
+Reviewer #3
 
-> The study by Bouvier et al (cited in the paper) showed that
-> providing context was not necessarily helpful.
+- We have removed the evidence weightings as the reviewer suggested.
+  (We agree upon reflection that they are probably more of a
+  distraction than a help.)
 
-Overall, as I mention above (2), I think these are good suggestions
-for programming, and for teaching, but I am less convinced that they
-are the best tips for "teaching programming".
-
-My major suggestion is that the authors provide a more concrete
-context for who they are trying to teach.
-
-Reviewer #2: This is a very well done and compellingly organized
-overview of some of the best evidence-based, practical recommendations
-for the teaching of programming. I especially commend the use of the
-"strength of evidence" rating -- as research in the field is nascent
-(hey, people have been studying how people learn math for literally a
-thousand years). This will serve as a very actionable set of
-recommendations.
-
-In general, I believe that the descriptions and ratings accurately
-describe the practices and the general state of research in the
-field. Adequate references are given, enough to point interested
-people in the right direction, but not overwhelming.
-
-
-Two comments:
-
-1) One slightly confusing of complex relationship is the
-recommendations on live coding and those on demonstrations. I am not
-personally as familiar with the research on live coding and have
-always suggested others follow the recommendations on demonstrations
-for such activities. They clearly relate. Demonstrations (in physics)
-have shown that requiring learners to predict is key. I see no reason
-that shouldn't also be the case in computer science, with the caveat
-that demonstrations in physics are often specifically designed to
-confront a common misconception. Not always or perhaps even often the
-case in live coding. Also, physics demonstrations often focus on one
-key take-away/learning. Live coding is part of a much more complex
-process and we know from research on novices that processes that are
-simple to experts often overwhelm novices. I would urge the authors to
-consider recommending that key learning goals/outline of things for
-students to pay attention to to guide their learning (e.g. “As you
-watch this, I want you to focus on/look for…”). An informal reference
-can be found here:
-http://www.cwsei.ubc.ca/resources/files/Demo_WorkshopSummary_CWSEI-EOY2015.pdf
-
-> The first paragraph of Rule 4 (Have students make predictions)
-> connects live coding to having students make predictions. We agree
-> that directing students' attention to particular aspects of the
-> process would probably improve outcomes, but to our knowledge, no
-> one has (yet) done this study for computing education.
-
-2) In the final formatting, I would recommend a short version of all
-the recommendations with their "rating" be put in a box or otherwise
-highlighted for people to be able to skim over or cut out and post.
-
-> Added.
-
-Reviewer #3: In my opinion, this article is well-situated in the
-Education Section based on its stated goals. It is a succinct review
-of some established and emerging evidence-based teaching methods in
-the context of computer programming. As this type of information is
-not particularly well-known among computer science faculty - the group
-traditionally tasked with programming instruction - I anticipate that
-the need for information in improving the teaching of programming is
-of particular value to those involved in scientific computing. This
-article offers a bonus that if the research on learning is completely
-new to a reader, it also offers an accessible way into the research
-base beyond the learning of computing specifically.
-
-The article is overall very well-written and the approach in the
-writing serves the "tips" framework (even though it is not found in
-that section of the journal).
-
-I feel that this article is a worthwhile contribution and should be
-considered for publication. I do have one area of concern that I would
-like to highlight for the authors regarding the "Evidence strength"
-assigned to each tip. This is an important aspect of the article given
-both the overall theme of appeal to evidence in teaching practice and
-the way the rating is included in a prominent way with each tip,
-enough so to push my recommendation to consider minor revision.
-
-As an initial example, I am not sure how to compare the evidence
-strengths for "1. There is no geek gene", which has a substantial
-amount of evidence related to the value of deliberate practice in
-cognitively demanding domains as well as the effects of teacher biases
-on learning - yet the evidence level is rated "Medium" - to "6
-. Subgoals" with its "High" level of evidence though this is based, to
-my understanding, on a few relatively recent studies all from the same
-group. Even though the latter are of high quality, to me this seems an
-unusually high premium on CS-specific research, as the CS-specific
-items cited in Tip 1 are relevant but also compatible with
-well-established research that is less focused on programming.
-
-For more recent results in the area of Tip 1 that include studies on
-undergraduate students (I think the earlier studies cited are mainly
-for younger students), the authors may be interested in an article
-like: Rattan, Good, and Dweck's "“It's ok—Not everyone can be good at
-math”: Instructors with an entity theory comfort (and demotivate)
-students": http://www.sciencedirect.com/science/article/pii/S0022103111003027
-This article shows that instructor beliefs can result in even worse
-outcomes than "invest[ing] less" in the students they perceive as
-unfit for their discipline.
-
-I would offer a similar comment to the above for Tip 9, in that there
-is substantial research on the nature of expertise and the
-implications for learning (not cited in the article; work by K. Anders
-Ericsson would be a potential source), though it appears that there is
-little research in this area for programming specifically (I can't
-remember if the "10x" productivity research in software development is
-of suitable quality to provide further support in the subject of
-programming).
-
-My overarching concern is that it feels like the use of "Evidence
-strength: Low" as a label undercuts the strength of those tips. I
-worry that this would become a distraction for people familiar with
-non-programming-specific education research (it was for me), and -
-worse - that it would become a suggestion to dismiss those Low-rated
-tips for readers new to research on learning (as in, these are pretty
-much your 10 novel options for teaching programming but some of them
-aren't a good choice). If there were a bit more detail on the thinking
-that went into the rating, I think it would be helpful, particularly
-as this publication may be reaching an audience that is not as in
-touch with CS-specific education research. If the evidence is
-promising but limited so far, for example, that is an important
-difference from a decision-making standpoint than solid evidence of a
-tiny effect (which I feel would also be rated Low in this system, or
-perhaps it would be excluded from consideration for these tips
-entirely, but we don't really learn about excluded tips). Perhaps this
-could be solved by further elaboration in the footnote (though this
-may hide it relative to the very prominent ratings in the text), to
-alert readers that "Low" means promising research but limited so far,
-which is why it has such a rating but is also included in your
-recommendations. Or the authors may consider switching "Low" to
-"Promising" entirely if that is the intent. Similarly, the noted
-concerns above for Tips 1 and 9 might be addressed by a phrase like
-"High in many settings, promising in computing" if that is closer to
-the intended meaning. In my opinion, this would also require less
-cognitive processing by readers as they read through the tips.
-
-The article would still be a useful contribution without the evidence
-ratings, but (interpretable) evidence ratings improve meaningfully on
-the tips plus citations by offering a model for decision-making in
-teaching choices based on evidence, which may be new to readers (in
-which case, a great concept to introduce) or will be appreciated by
-those who are already weighing such evidence in their teaching.
-
-> We have removed the evidence weightings.
-
-A final small note: will many readers of this publication be familiar
-enough with PHP to understand the reference in the Conclusion? I am
-not sure that PHP or the culture dismissing it would be familiar to
-people whose exposure to computing is via scientific research, and it
-is not to my knowledge a language likely to be encountered in intro
-programming courses. Perhaps something like "conducting analysis using
-spreadsheets" (or name Excel directly) might be more familiar to this
-audience. Matlab may also fall in this category.
-
-> Now references spreadsheets instead of PHP.
+- We now reference spreadsheets instead of PHP - our thanks for the
+  suggestion.
