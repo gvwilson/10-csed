@@ -470,7 +470,7 @@ finding the first surname alphabetically from a list of names
 may seem like quite different problems to learners,
 even though more advanced programmers would recognise them as isomorphic.
 
-Morrison et al.~\cite{morrison-subgoals,morrison-parsons,margulieux} have shown that students perform better
+Margulieux and Morrison et al.~\cite{morrison-subgoals,morrison-parsons,margulieux} have shown that students perform better
 when worked examples are broken down into steps (or subgoals)
 which are given names (or labels) -- an example is given in Figure~\ref{fig:subgoal}.
 Subgoal labels provide a structure which allow learners to see the similarities between coding problems and to communicate with their peers and instructors more efficiently.  Learners can then apply the labels to future tasks that they attempt themselves.
@@ -602,7 +602,7 @@ and they just might become one.
 
 \section*{Acknowledgments}
 
-We are grateful to Barbara Ericson and Leo Porter for their comments on a draft of this article.
+We are grateful to Barbara Ericson and Leo Porter for their comments on a draft of this article, and to Lauren Margulieux for providing the example used in Figure \ref{fig:subgoal}.
 
 \pagebreak
 
@@ -647,31 +647,27 @@ d) 3
 \noindent
 \textbf{Conventional Materials}
 \begin{verbatim}
-1. Click on "My Blocks" to see the blocks for components you created.
-2. Click on "clap"
-3. Drag out a when clap.Touched block
-4. Click on "clapSound"
-5. Drag out call clapSound.Play
-6. Connect it after when clap.Touched
+1. Click on "AccelerometerSensor1"
+2. Drag out a when AccelerometerSensor1.AccelerationChanged block
+3. Click on ?cowbellSound? 
+4. Drag out call cowbellSound.Play and connect it after
+      when AccelerometerSensor1.AccelerationChanged
 \end{verbatim}
 
 \noindent
 \textbf{Subgoal Labeled Materials}
 \begin{verbatim}
 Handle Events from My Blocks
-
-1. Click on "My Blocks" to see the blocks for components you created.
-2. Click on "clap"
-3. Drag out a when clap.Touched block
+1. Click on "AccelerometerSensor1"
+2. Drag out a when AccelerometerSensor1.AccelerationChanged block
 
 Set Output from My Blocks
-
-4. Click on "clapSound" and
-5. Drag out call clapSound.Play
-6. Connect it after when clap.Touched
+3. Click on ?cowbellSound? 
+4. Drag out call cowbellSound.Play and connect it after
+      when AccelerometerSensor1.AccelerationChanged
 \end{verbatim}
 \end{mdframed}
-\caption{An example of subgoal labeling (taken from \cite{margulieux})}
+\caption{An example of subgoal labeling.}
 \label{fig:subgoal}
 \end{figure}
 
