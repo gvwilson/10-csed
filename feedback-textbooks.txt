@@ -1,0 +1,17 @@
+To whom it may concern,
+
+Please find attached our revisions to our paper.  We have included
+comments to the reviewers below, and look forward to hearing from you.
+
+Sincerely,
+Dr. Neil C.C. Brown
+Dr. Greg Wilson
+
+Reviewer #1
+
+We have added this sentence to the section on live coding:
+
+Instructors who use live coding should ensure that learners have
+reference material available after lectures, such as a textbook, but
+should also recognize that students of all ages increasingly turn to
+Q&A sites such as Stack Overflow for information.
