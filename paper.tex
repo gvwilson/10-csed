@@ -142,6 +142,16 @@
 \usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
 \renewcommand{\figurename}{Fig}
 
+% Trying to typeset code
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[
+    fileext=loc,
+    listname={List of Code Samples},
+    name=Code,
+    placement=tbhp,
+    within=none,
+]{code}
+
 % Use the PLoS provided BiBTeX style
 \bibliographystyle{plos2015}
 
@@ -191,12 +201,12 @@
 \newline
 % Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
 \\
-{Neil C.C.\ Brown}\textsuperscript{1{\ddag}*},
+{Neil C.C.\ Brown}\textsuperscript{1{\ddag}},
 {Greg~Wilson}\textsuperscript{2{\ddag}*}
 \\
 \bigskip
-\textbf{1} King's College London / neil.c.c.brown@kcl.ac.uk \\
-\textbf{2} DataCamp / gvwilson@third-bit.com \\
+\textbf{1} Department of Informatics, King's College London, London, UK, neil.c.c.brown@kcl.ac.uk \\
+\textbf{2} DataCamp, Toronto, Onario, Canada, gvwilson@third-bit.com \\
 
 \bigskip
 
@@ -311,7 +321,7 @@ peer instruction proceeds in several phases:
 
 \item The instructor then gives learners a multiple choice question
   that probes for misconceptions rather than simple factual recall.
-  A programming example is given in Figure~\ref{fig:mcq}
+  A programming example is given in Code~\ref{fig:mcq}
   which relates to integer comparison and loops.  The multiple choice question must be well designed.
   There is no point asking a trivial question that all students will get right or one with meaningless wrong answers which no student will pick.
   The ideal questions are those where 40--60\% of students are likely to get the right answer first time~\cite[p23]{nrc-reaching}, and where every wrong answer corresponds to a misconception that will cause it to be picked by at least some students.
@@ -477,7 +487,7 @@ even though more advanced programmers would recognise them as isomorphic.
 
 Margulieux and Morrison et al.~\cite{morrison-subgoals,morrison-parsons,margulieux} have shown that students perform better
 when worked examples are broken down into steps (or subgoals)
-which are given names (or labels) -- an example is given in Figure~\ref{fig:subgoal}.
+which are given names (or labels) -- an example is given in Code~\ref{fig:subgoal}.
 Subgoal labels provide a structure which allow learners to see the similarities between coding problems and to communicate with their peers and instructors more efficiently.  Learners can then apply the labels to future tasks that they attempt themselves.
 
 \rulemajor{Stick to one language}{one-language}
@@ -608,7 +618,7 @@ and they just might become one.
 \section*{Acknowledgments}
 
 We are grateful to Barbara Ericson and Leo Porter for their comments on a draft of this article,
-and to Lauren Margulieux for providing the example used in Figure \ref{fig:subgoal}.
+and to Lauren Margulieux for providing the example used in Code~\ref{fig:subgoal}.
 
 \pagebreak
 
@@ -629,7 +639,7 @@ and to Lauren Margulieux for providing the example used in Figure \ref{fig:subgo
 
 \pagebreak
 
-\begin{figure}[h]
+\begin{code}[h]
 \begin{mdframed}
 \begin{verbatim}
 for (int i = 1; i < 10; i++) {
@@ -646,9 +656,9 @@ d) 3
 \end{mdframed}
 \caption{An example multiple choice question probing learners' understanding of loops and integer comparisons.}
 \label{fig:mcq}
-\end{figure}
+\end{code}
 
-\begin{figure}[h]
+\begin{code}[h]
 \begin{mdframed}
 \noindent
 \textbf{Conventional Materials}
@@ -675,7 +685,7 @@ Set Output from My Blocks
 \end{mdframed}
 \caption{An example of subgoal labeling.}
 \label{fig:subgoal}
-\end{figure}
+\end{code}
 
 % \nolinenumbers
 
@@ -694,6 +704,190 @@ Set Output from My Blocks
 
 \pagebreak
 
-\bibliography{paper}
+% \bibliography{paper}
+
+\begin{thebibliography}{10}
+
+\bibitem{mayer-subject}
+Mayer RE.
+\newblock Teaching of Subject Matter.
+\newblock Annual Review of Psychology. 2004;55(1):715--744.
+\newblock doi:{10.1146/annurev.psych.55.082602.133124}.
+
+\bibitem{cs-teaching-tips}
+Lewis C. CS Teaching Tips; 2017.
+\newblock \texttt{http://csteachingtips.org/}.
+
+\bibitem{guzdial-myths}
+Guzdial M. Top 10 Myths About Teaching Computer Science; 2015.
+\newblock
+  \texttt{https://cacm.acm.org/blogs/blog-cacm/189498-top-10-myths-about-teaching-computer-science/fulltext}.
+
+\bibitem{patitsas-bimodal}
+Patitsas E, Berlin J, Craig M, Easterbrook S.
+\newblock Evidence That Computer Science Grades Are Not Bimodal.
+\newblock In: Proceedings of the 2016 ACM Conference on International Computing
+  Education Research. ICER '16. New York, NY, USA: ACM; 2016. p. 113--121.
+\newblock Available from: \url{http://doi.acm.org/10.1145/2960310.2960312}.
+
+\bibitem{alvidrez-weinstein}
+Alvidrez J, Weinstein RS.
+\newblock Early teacher perceptions and later student academic achievement.
+\newblock Journal of Educational Psychology. 1999;91(4):731--746.
+
+\bibitem{brophy}
+Brophy JE.
+\newblock Research on the self-fulfilling prophecy and teacher expectations.
+\newblock Journal of Educational Psychology. 1983;75(5):631--661.
+
+\bibitem{jussim-eccles}
+Jussim L, Eccles J.
+\newblock Social perception, social stereotypes, and teacher expectations:
+  Accuracy and the quest for the powerful self-fulfilling prophecy.
+\newblock Advances in Experimental Social Psychology. 1996;28:281--388.
+
+\bibitem{mazur-peer-instruction}
+Mazur E.
+\newblock Peer Instruction: A User's Manual.
+\newblock Prentice Hall; 1996.
+
+\bibitem{porter-multi}
+Porter L, Bailey~Lee C, Simon B, Cutts Q, Zingaro D.
+\newblock Experience Report: A Multi-classroom Report on the Value of Peer
+  Instruction.
+\newblock In: Proceedings of the 16th Annual Joint Conference on Innovation and
+  Technology in Computer Science Education; 2011. p. 138--142.
+
+\bibitem{porter-success}
+Porter L, Guzdial M, McDowell C, Simon B.
+\newblock Success in introductory programming: What works?
+\newblock Communications of the ACM. 2013;56(8).
+
+\bibitem{nrc-reaching}
+Council NR.
+\newblock Reaching Students: What Research Says About Effective Instruction in
+  Undergraduate Science and Engineering.
+\newblock Washington, DC: The National Academies Press; 2015.
+\newblock Available from:
+  \url{https://www.nap.edu/catalog/18687/reaching-students-what-research-says-about-effective-instruction-in-undergraduate}.
+
+\bibitem{rubin-live-coding}
+Rubin MJ.
+\newblock The Effectiveness of Live-coding to Teach Introductory Programming.
+\newblock In: Proceeding of the 44th ACM Technical Symposium on Computer
+  Science Education. SIGCSE '13. New York, NY, USA: ACM; 2013. p. 651--656.
+\newblock Available from: \url{http://doi.acm.org/10.1145/2445196.2445388}.
+
+\bibitem{barker-live-coding}
+Barker LJ, Garvin-Doxas K, Roberts E.
+\newblock What Can Computer Science Learn from a Fine Arts Approach to
+  Teaching?
+\newblock In: Proceedings of the 36th SIGCSE Technical Symposium on Computer
+  Science Education. SIGCSE '05. New York, NY, USA: ACM; 2005. p. 421--425.
+\newblock Available from: \url{http://doi.acm.org/10.1145/1047344.1047482}.
+
+\bibitem{willingham-book}
+Willingham DT.
+\newblock Why don't students like school?: A cognitive scientist answers
+  questions about how the mind works and what it means for the classroom.
+\newblock John Wiley \& Sons; 2009.
+
+\bibitem{crouch-demo}
+Crouch C, Fagen AP, Callan JP, Mazur E.
+\newblock Classroom demonstrations: Learning tools or entertainment?
+\newblock American Journal of Physics. 2004;72(6):835--838.
+\newblock doi:{10.1119/1.1707018}.
+
+\bibitem{miller-demo}
+Miller K, Lasry N, Chu K, Mazur E.
+\newblock Role of physics lecture demonstrations in conceptual learning.
+\newblock Phys Rev ST Phys Educ Res. 2013;9:020113.
+\newblock doi:{10.1103/PhysRevSTPER.9.020113}.
+
+\bibitem{hannay}
+Hannay JE, Dybå T, Arisholm E, , Sjøberg DIK.
+\newblock The effectiveness of pair programming: a meta-analysis.
+\newblock Information and Software Technology. 2009;51(7).
+
+\bibitem{mcdowell}
+McDowell C, Werner L, Bullock HE, Fernald J.
+\newblock Pair Programming Improves Student Retention, Confidence, and Program
+  Quality.
+\newblock Communications of the ACM. 2006;49(8):90--95.
+
+\bibitem{morrison-subgoals}
+Morrison BB, Margulieux LE, Guzdial M.
+\newblock Subgoals, Context, and Worked Examples in Learning Computing Problem
+  Solving.
+\newblock In: Proceedings of the Eleventh Annual International Conference on
+  International Computing Education Research. ICER '15. New York, NY, USA: ACM;
+  2015. p. 21--29.
+\newblock Available from: \url{http://doi.acm.org/10.1145/2787622.2787733}.
+
+\bibitem{morrison-parsons}
+Morrison BB, Margulieux LE, Ericson B, Guzdial M.
+\newblock Subgoals Help Students Solve Parsons Problems.
+\newblock In: Proceedings of the 47th ACM Technical Symposium on Computing
+  Science Education. SIGCSE '16. New York, NY, USA: ACM; 2016. p. 42--47.
+\newblock Available from: \url{http://doi.acm.org/10.1145/2839509.2844617}.
+
+\bibitem{margulieux}
+Margulieux LE, Guzdial M, Catrambone R.
+\newblock Subgoal-labeled Instructional Material Improves Performance and
+  Transfer in Learning to Develop Mobile Applications.
+\newblock In: Proceedings of the Ninth Annual International Conference on
+  International Computing Education Research; 2012. p. 71--78.
+
+\bibitem{gick-holyoak}
+Gick ML, Holyoak KJ.
+\newblock The cognitive basis of knowledge transfer.
+\newblock In: Cormier SM, Hagman JD, editors. Transfer of learning:
+  Contemporary research and applications. Academic Press; 1987.
+
+\bibitem{guzdial-media}
+Guzdial M.
+\newblock Exploring hypotheses about media computation.
+\newblock In: Proceedings of the Ninth Annual International ACM Conference on
+  International Computing Education Research. ICER '13; 2013. p. 19--26.
+
+\bibitem{bouvier-context}
+Bouvier D, Lovellette E, Matta J, Alshaigy B, Becker BA, Craig M, et~al.
+\newblock Novice Programmers and the Problem Description Effect.
+\newblock In: Proceedings of the 2016 ITiCSE Working Group Reports. ITiCSE '16.
+  New York, NY, USA: ACM; 2016. p. 103--118.
+\newblock Available from: \url{http://doi.acm.org/10.1145/3024906.3024912}.
+
+\bibitem{repenning}
+Repenning A.
+\newblock Moving beyond syntax: lessons from 20 years of blocks programing in
+  {AgentSheets}.
+\newblock Journal of Visual Languages and Sentient Systems. 2017;3.
+\newblock doi:{10.18293/VLSS2017-010}.
+
+\bibitem{parnin-expertise}
+Parnin C, Siegmund J, Peitek N.
+\newblock On the Nature of Programmer Expertise.
+\newblock In: Psychology of Programming Interest Group Workshop 2017; 2017.
+
+\bibitem{parsons}
+Parsons D, Haden P.
+\newblock Parsons Programming Puzzles: A Fun and Effective Learning Tool for
+  First Programming Courses.
+\newblock In: Proceedings of the 8th Australasian Conference on Computing
+  Education - Volume 52. ACE '06. Darlinghurst, Australia, Australia:
+  Australian Computer Society, Inc.; 2006. p. 157--163.
+\newblock Available from:
+  \url{http://dl.acm.org/citation.cfm?id=1151869.1151890}.
+
+\bibitem{ericson-ebook}
+Ericson B, Moore S, Morrison B, Guzdial M.
+\newblock Usability and Usage of Interactive Features in an Online Ebook for CS
+  Teachers.
+\newblock In: Proceedings of the Workshop in Primary and Secondary Computing
+  Education. WiPSCE '15. New York, NY, USA: ACM; 2015. p. 111--120.
+\newblock Available from: \url{http://doi.acm.org/10.1145/2818314.2818335}.
+
+\end{thebibliography}
+
 
 \end{document}
